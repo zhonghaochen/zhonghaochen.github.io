@@ -1,13 +1,9 @@
 ---
 title: "A Multiscale Dual-Branch Feature Fusion and Attention Network for Hyperspectral Images Classification"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt:
 date: 2021-09-12
 venue: September
 DOI: 10.1109/JSTARS.2021.3103176
-paperurl: 
-citation:
 ---
 
 [Download paper here](http://academicpages.github.io/files/paper1.pdf)
