@@ -2,7 +2,7 @@
 title: "Fusion network for local and global features extraction for hyperspectral image classification"
 collection: publications
 date: 2022-05-19
-venue: 'May 19'
+venue: '19 May'
 ---
 [Download paper here](https://www.tandfonline.com/doi/full/10.1080/01431161.2022.2102952)
 
