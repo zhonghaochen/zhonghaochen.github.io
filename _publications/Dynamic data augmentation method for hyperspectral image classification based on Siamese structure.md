@@ -2,7 +2,7 @@
 title: "Dynamic Data Augmentation Method for Hyperspectral Image Classification Based on Siamese Structure"
 collection: publications
 date: 2021-09-07
-venue: 'September 7'
+venue: '07 September'
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/9508179)
 
