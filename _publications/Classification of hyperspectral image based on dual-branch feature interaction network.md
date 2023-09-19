@@ -2,7 +2,7 @@
 title: "Classification of hyperspectral image based on dual-branch feature interaction network"
 collection: publications
 date: 2022-05-3
-venue: 'May 03'
+venue: '03 May'
 ---
 [Download paper here](https://www.tandfonline.com/doi/full/10.1080/01431161.2022.2089069)
 
