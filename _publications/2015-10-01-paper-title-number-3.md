@@ -4,7 +4,7 @@ collection: publications
 date: 2021-07-09
 venue: '9 July'
 ---
-Journal: IEEE JSTARS
+IEEE JSTARS
 [Download paper here](http://academicpages.github.io/files/paper3.pdf)
 
 <div style="text-align: justify;">
