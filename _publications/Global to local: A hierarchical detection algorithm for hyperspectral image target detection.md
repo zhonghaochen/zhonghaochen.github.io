@@ -2,7 +2,7 @@
 title: "Global to Local: A Hierarchical Detection Algorithm for Hyperspectral Image Target Detection"
 collection: publications
 date: 2022-12-1
-venue: 'December 01'
+venue: '01 December'
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/9968036)
 
