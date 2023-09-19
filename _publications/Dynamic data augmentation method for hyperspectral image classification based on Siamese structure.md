@@ -3,7 +3,6 @@ title: "Hierarchical shrinkage multiscale network for hyperspectral image classi
 collection: publications
 date: 2021-09-07
 venue: 'September 7'
-paperurl: https://ieeexplore.ieee.org/document/9440750
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/9508179)
 
