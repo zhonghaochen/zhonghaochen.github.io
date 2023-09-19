@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "HomePage of Zhonghao Chen"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Zhonghao Chen"
 description              : &description "personal description"
 url                      : https://zhonghaochen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -59,7 +59,7 @@ yandex_site_verification :
 twitter:
   username               :
 facebook:
-  username               : &facebook
+  username               : &Zhonghao Chen
   app_id                 :
   publisher              :
 og_image                 :  # Open Graph/Twitter default site image
@@ -82,19 +82,19 @@ analytics:
 author:
   name             : "Zhonghao Chen"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  # bio              : # "Your biography for the left-hand sidebar"
+  location         : "Nanjing, China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "https://scholar.google.com/citations?user=8TqiDYMAAAAJ&hl=zh-CN"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Zhonghao-Chen-3"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "Zhonghao Chen"
   foursquare       :
   github           : "zhonghaochen"
   google_plus      :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  # twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
