@@ -4,6 +4,7 @@ collection: publications
 date: 2021-09-12
 venue: '12 September'
 ---
+IEEE JSTARS
 [Download paper here](https://ieeexplore.ieee.org/document/9512469)
 
 <div style="text-align: justify;">
