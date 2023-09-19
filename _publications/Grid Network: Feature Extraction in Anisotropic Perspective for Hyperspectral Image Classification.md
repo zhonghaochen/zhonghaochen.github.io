@@ -4,6 +4,7 @@ collection: publications
 date: 2023-07-21
 venue: '21 July'
 ---
+IEEE GRSL
 [Download paper here](https://ieeexplore.ieee.org/document/10189830)
 
 <div style="text-align: justify;">
