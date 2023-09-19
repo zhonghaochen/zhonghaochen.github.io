@@ -2,7 +2,7 @@
 title: "Adaptive spectral-spatial feature fusion network for hyperspectral image classification using limited training samples"
 collection: publications
 date: 2022-03-23
-venue: 'March 23'
+venue: '23 March'
 ---
 [Download paper here](https://www.sciencedirect.com/science/article/pii/S0303243422000137)
 
