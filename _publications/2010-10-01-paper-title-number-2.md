@@ -6,6 +6,7 @@ venue: 'May 10'
 DOI: 10.3390/mi12050545
 ---
 DOI: 10.3390/mi12050545
+
 [Download paper here](http://academicpages.github.io/files/paper2.pdf)
 
 Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
