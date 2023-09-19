@@ -2,7 +2,7 @@
 title: "Hyperspectral Target Detection via Spectral Aggregation and Separation Network With Target Band Random Mask"
 collection: publications
 date: 2023-06-23
-venue: 'June 23'
+venue: '23 June'
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/10161584)
 
