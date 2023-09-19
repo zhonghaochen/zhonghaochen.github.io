@@ -2,7 +2,7 @@
 title: "Hybrid dilated convolution with multi-scale residual fusion network for hyperspectral image classification"
 collection: publications
 date: 2021-05-10
-venue: 'May 10'
+venue: '10 May'
 ---
 [Download paper here](https://www.mdpi.com/2072-666X/12/5/545)
 
