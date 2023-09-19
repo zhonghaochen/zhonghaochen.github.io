@@ -2,7 +2,7 @@
 title: "Adaptively Dictionary Construction for Hyperspectral Target Detection"
 collection: publications
 date: 2023-03-27
-venue: 'March 27'
+venue: '27 March'
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/10050134)
 
