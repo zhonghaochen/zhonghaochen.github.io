@@ -2,7 +2,7 @@
 title: "Multiscale spectral-spatial cross-extraction network for hyperspectral image classification"
 collection: publications
 date: 2021-11-23
-venue: 'November 23'
+venue: '23 November'
 ---
 [Download paper here](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12382)
 
