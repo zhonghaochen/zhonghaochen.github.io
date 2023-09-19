@@ -29,6 +29,17 @@ Artificial Intelligence in Earth Vision
 
 
 
-For more info
+Reviewer
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+-IEEE Transactions on Geoscience and Remote Sensing (TGRS)
+-IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)
+-IEEE Geoscience and Remote Sensing Letters
+-Knowledge-based System
+-Signal Processing
+-Egyptian Journal of Remote Sensing and Space Sciences
+-International Journal of Remote Sensing (TRES)
+-CMC-Computers, Materials & Continua
+-Signal, Image and Video Processing
+-Journal of Beijing Institute of Technology
+-Earth Science Informatics
+...
