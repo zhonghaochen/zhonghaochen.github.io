@@ -4,6 +4,7 @@ collection: publications
 date: 2022-12-1
 venue: '01 December'
 ---
+IEEE TGRS
 [Download paper here](https://ieeexplore.ieee.org/document/9968036)
 
 <div style="text-align: justify;">
