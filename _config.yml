@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Zhonghao Chen"
   avatar           : "profile.png"
-  bio              : # ""
+  bio              : ""
   location         : "Nanjing, China"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
