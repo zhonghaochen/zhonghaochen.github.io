@@ -2,7 +2,7 @@
 title: "Grid Network: Feature Extraction in Anisotropic Perspective for Hyperspectral Image Classification"
 collection: publications
 date: 2023-07-21
-venue: 'July 21'
+venue: '21 July'
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/10189830)
 
