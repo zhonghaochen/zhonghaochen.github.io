@@ -2,7 +2,7 @@
 title: "A multiscale dual-branch feature fusion and attention network for hyperspectral images classification"
 collection: publications
 date: 2021-09-12
-venue: 'September 12'
+venue: '12 September'
 ---
 [Download paper here](https://ieeexplore.ieee.org/document/9512469)
 
