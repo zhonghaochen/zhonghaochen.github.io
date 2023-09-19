@@ -32,14 +32,14 @@ Artificial Intelligence in Earth Vision
 Reviewer
 ------
 -IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
--IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)
--IEEE Geoscience and Remote Sensing Letters
--Knowledge-based System
--Signal Processing
--Egyptian Journal of Remote Sensing and Space Sciences
--International Journal of Remote Sensing (TRES)
--CMC-Computers, Materials & Continua
--Signal, Image and Video Processing
--Journal of Beijing Institute of Technology
--Earth Science Informatics
+-IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)<br>
+-IEEE Geoscience and Remote Sensing Letters<br>
+-Knowledge-based System<br>
+-Signal Processing<br>
+-Egyptian Journal of Remote Sensing and Space Sciences<br>
+-International Journal of Remote Sensing (TRES)<br>
+-CMC-Computers, Materials & Continua<br>
+-Signal, Image and Video Processing<br>
+-Journal of Beijing Institute of Technology<br>
+-Earth Science Informatics<br>
 ...
