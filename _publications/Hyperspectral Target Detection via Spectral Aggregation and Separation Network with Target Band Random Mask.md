@@ -4,6 +4,7 @@ collection: publications
 date: 2023-06-23
 venue: '23 June'
 ---
+IEEE TGRS
 [Download paper here](https://ieeexplore.ieee.org/document/10161584)
 
 <div style="text-align: justify;">
