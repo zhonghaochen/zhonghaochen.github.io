@@ -2,7 +2,7 @@
 title: "Hierarchical shrinkage multiscale network for hyperspectral image classification with hierarchical feature fusion"
 collection: publications
 date: 2021-07-09
-venue: 'July 9'
+venue: '9 July'
 ---
 [Download paper here](http://academicpages.github.io/files/paper3.pdf)
 
