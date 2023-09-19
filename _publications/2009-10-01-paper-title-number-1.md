@@ -3,8 +3,8 @@ title: "Sandwich convolutional neural network for hyperspectral image classifica
 collection: publications
 date: 2021-03-2
 venue: '02 March'
-Journal: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
 ---
+IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
 [Download paper here](https://ieeexplore.ieee.org/document/9366971)
 
 <div style="text-align: justify;">
