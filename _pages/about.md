@@ -30,7 +30,7 @@ Artificial Intelligence in Earth Vision
 
 
 Reviewer
-------
+======
 -IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
 -IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)<br>
 -IEEE Geoscience and Remote Sensing Letters<br>
