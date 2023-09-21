@@ -42,5 +42,5 @@ Reviewer
 -Signal, Image and Video Processing<br>
 -Journal of Beijing Institute of Technology<br>
 -Earth Science Informatics<br>
--SN Computer Science<br>
+-Springer Nature Computer Science<br>
 ...
