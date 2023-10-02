@@ -1,7 +1,7 @@
 ---
 title: "Temporal difference-guided network for hyperspectral image change detection"
 collection: publications
-date: 2022-09-06
+date: 2023-09-29
 venue: '29 September'
 ---
 IEEE JSTARS
