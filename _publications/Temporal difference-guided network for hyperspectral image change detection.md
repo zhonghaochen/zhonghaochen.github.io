@@ -2,7 +2,7 @@
 title: "Temporal difference-guided network for hyperspectral image change detection"
 collection: publications
 date: 2022-09-06
-venue: '06 September'
+venue: '29 September'
 ---
 IEEE JSTARS
 [Download paper here](https://www.tandfonline.com/doi/full/10.1080/01431161.2023.2258563)
