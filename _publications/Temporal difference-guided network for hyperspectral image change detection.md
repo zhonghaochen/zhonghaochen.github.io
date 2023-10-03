@@ -4,7 +4,7 @@ collection: publications
 date: 2023-09-29
 venue: '29 September'
 ---
-IEEE JSTARS
+TRES
 [Download paper here](https://www.tandfonline.com/doi/full/10.1080/01431161.2023.2258563)
 
 <div style="text-align: justify;">
