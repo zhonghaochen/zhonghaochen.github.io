@@ -44,6 +44,6 @@ Reviewer
 -Journal of Beijing Institute of Technology<br>
 -Earth Science Informatics<br>
 -IET Image Processing<br>
--Survey Review (br)
+-Survey Review <br>
 -Springer Nature Computer Science<br>
 ...
