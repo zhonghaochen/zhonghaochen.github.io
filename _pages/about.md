@@ -14,7 +14,7 @@ Please feel free to reach out to me via email for research questions, collaborat
 
 Research Interest:
 ======
-My research interests include but not noly limiting to
+My research interests include but not only limited to
 
 Machine/Deep Learning
 
@@ -32,6 +32,7 @@ Artificial Intelligence in Earth Vision
 Reviewer
 ======
 -IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
+-IEEE Transactions on Artificial Intelligence (TAI)<br>
 -IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)<br>
 -IEEE Geoscience and Remote Sensing Letters<br>
 -Knowledge-based System<br>
@@ -43,5 +44,6 @@ Reviewer
 -Journal of Beijing Institute of Technology<br>
 -Earth Science Informatics<br>
 -IET Image Processing<br>
+-Survey Review (br)
 -Springer Nature Computer Science<br>
 ...
