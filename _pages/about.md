@@ -31,7 +31,9 @@ Artificial Intelligence in Earth Vision
 
 Reviewer
 ======
--IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
+-IEEE Transactions on Geoscience and Remote Sensing (TGRS)<be>
+-IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)<br>
+-IEEE Transactions on Intelligent Transportation Systems (T-ITS)<br>
 -IEEE Transactions on Artificial Intelligence (TAI)<br>
 -IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)<br>
 -IEEE Geoscience and Remote Sensing Letters<br>
