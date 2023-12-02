@@ -34,10 +34,12 @@ Reviewer
 -IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
 -IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)<br>
 -IEEE Transactions on Intelligent Transportation Systems (T-ITS)<br>
+-IEEE Transactions on Intelligent Vehicles(T-IV)<br>
 -IEEE Transactions on Artificial Intelligence (TAI)<br>
 -IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)<br>
 -IEEE Geoscience and Remote Sensing Letters<br>
 -Knowledge-based System<br>
+-information science<br>
 -Signal Processing<br>
 -Egyptian Journal of Remote Sensing and Space Sciences<br>
 -International Journal of Remote Sensing (TRES)<br>
