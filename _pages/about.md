@@ -49,5 +49,6 @@ Reviewer
 -Earth Science Informatics<br>
 -IET Image Processing<br>
 -Survey Review <br>
+-Journal of Spatial Science<br>
 -Springer Nature Computer Science<br>
 ...
