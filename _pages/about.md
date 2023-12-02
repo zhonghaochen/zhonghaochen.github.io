@@ -39,7 +39,7 @@ Reviewer
 -IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)<br>
 -IEEE Geoscience and Remote Sensing Letters<br>
 -Knowledge-based System<br>
--information science<br>
+-Information Sciences<br>
 -Signal Processing<br>
 -Egyptian Journal of Remote Sensing and Space Sciences<br>
 -International Journal of Remote Sensing (TRES)<br>
