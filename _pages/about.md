@@ -33,6 +33,7 @@ Reviewer
 ======
 -IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
 -IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)<br>
+-IEEE Transactions on Multimedia (TMM)<br>
 -IEEE Transactions on Intelligent Transportation Systems (T-ITS)<br>
 -IEEE Transactions on Intelligent Vehicles(T-IV)<br>
 -IEEE Transactions on Artificial Intelligence (TAI)<br>
