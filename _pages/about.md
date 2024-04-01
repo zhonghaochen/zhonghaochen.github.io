@@ -41,6 +41,7 @@ Reviewer
 -IEEE Geoscience and Remote Sensing Letters<br>
 -Knowledge-based System<br>
 -Information Sciences<br>
+-Geo-spatial Information Science<br>
 -Signal Processing<br>
 -Egyptian Journal of Remote Sensing and Space Sciences<br>
 -International Journal of Remote Sensing (TRES)<br>
