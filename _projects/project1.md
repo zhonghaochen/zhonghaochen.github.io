@@ -1,3 +1,9 @@
-# The Fundamental Research Funds for the Central Universities
-### January 1, 2024 - January 1, 2026
-## Leader
+---
+title: "Talk 1 on Relevant Topic in Your Field"
+collection: talks
+type: "Talk"
+permalink: /talks/2012-03-01-talk-1
+venue: "UC San Francisco, Department of Testing"
+date: 2012-03-01
+location: "San Francisco, California"
+---
