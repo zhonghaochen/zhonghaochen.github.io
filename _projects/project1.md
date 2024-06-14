@@ -1,6 +1,6 @@
 ---
 title: "The Fundamental Research Funds for the Central Universities"
-collections:projects
+collections: projects
 Sponsor: Hohai University
 Leader: "Talk"
 permalink: /projects/project1
