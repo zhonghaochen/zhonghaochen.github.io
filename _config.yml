@@ -251,9 +251,9 @@ defaults:
   # _projects
   - scope:
       path: ""
-      type: _projects
+      type: projects
     values:
-      layout: _project
+      layout: single
       author_profile: true
       share: true
 
