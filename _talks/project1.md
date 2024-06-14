@@ -1,6 +1,6 @@
 ---
 title: "The Fundamental Research Funds for the Central Universities"
-collection: talks
+collection: projects
 type: "Talk"
 permalink: /talks/project1
 ---
