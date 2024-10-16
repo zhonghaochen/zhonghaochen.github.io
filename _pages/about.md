@@ -31,6 +31,8 @@ Artificial Intelligence in Earth Vision
 
 Reviewer
 ======
+-IEEE Transactions on Image Processing (TIP)<be>
+-IEEE Transactions on Neural Network and Learning Systems (TNNLS)<br>
 -IEEE Transactions on Geoscience and Remote Sensing (TGRS)<br>
 -IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)<br>
 -IEEE Transactions on Multimedia (TMM)<br>
