@@ -1,4 +1,3 @@
-
 ---
 title: "<TL2GH²T: Triple-Path Local-to-Global Network With Hybrid Head Transformer for Hyperspectral Change Detection"
 collection: publications
