@@ -1,5 +1,5 @@
 ---
-title: <span style='font-size:12px;'> "TL2GH²T: Triple-Path Local-to-Global Network With Hybrid Head Transformer for Hyperspectral Change Detection"
+title: "<span style='font-size:12px;'>TL2GH²T: Triple-Path Local-to-Global Network With Hybrid Head Transformer for Hyperspectral Change Detection</span>"
 collection: publications
 date: 2024-08-19
 venue: '19 August'
