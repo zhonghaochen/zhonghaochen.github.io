@@ -4,7 +4,7 @@ collection: publications
 date: 2021-03-2
 venue: '02 March'
 ---
-H. Gao, Z. Chen, C. Li<br>
+H. Gao, **Z. Chen**, C. Li<br>
 IEEE JSTARS
 [Download paper here](https://ieeexplore.ieee.org/document/9366971)
 
