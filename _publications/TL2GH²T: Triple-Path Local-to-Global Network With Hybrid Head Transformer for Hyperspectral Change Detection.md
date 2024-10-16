@@ -3,7 +3,6 @@ title: "TL2GH²T: Triple-Path Local-to-Global Network With Hybrid Head Transform
 collection: publications
 date: 2024-08-19
 venue: '19 August
-author: Zhonghao Chen 
 ---
 Z Chen, Y Wang, SK Roy, H Gao, Y Ding, X Xiao, Z Shao, B Zhang <br>
 IEEE TGRS
