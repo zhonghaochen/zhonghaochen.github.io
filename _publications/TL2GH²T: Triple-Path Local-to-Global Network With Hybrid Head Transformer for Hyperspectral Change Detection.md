@@ -4,7 +4,7 @@ collection: publications
 date: 2024-08-19
 venue: '19 August
 ---
-Z Chen  <br>
+Zhonghao Chen  <br>
 IEEE TGRS
 [Download paper here](https://ieeexplore.ieee.org/document/10639462)
 
