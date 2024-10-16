@@ -4,7 +4,7 @@ collection: publications
 date: 2023-07-21
 venue: '21 July'
 ---
-**Z. Chen**, D. Hong, H. Gao
+**Z. Chen**, D. Hong, H. Gao <br>
 IEEE GRSL
 [Download paper here](https://ieeexplore.ieee.org/document/10189830)
 
