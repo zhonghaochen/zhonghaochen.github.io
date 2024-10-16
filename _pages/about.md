@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! My name is Zhonghao Chen and I am a Ph.D. candidate supervised by Prof. Hongmin Gao at Hohai University in Nanjing, China, IEEE Student Member, IEEE Geoscience and Remote Sensing Society (GRSS), Student Member. I am always open to collaborate and embrace new challenges and ideas. 
+Welcome! My name is Zhonghao Chen, and I am a Ph.D. candidate under the supervision of Prof. Hongmin Gao at Hohai University in Nanjing, China. I am an IEEE Student Member and a member of the IEEE Geoscience and Remote Sensing Society (GRSS). I am always open to collaboration and eager to embrace new challenges and ideas.
 
 Please feel free to reach out to me via email for research questions, collaboration opportunities, research discussions.
 
