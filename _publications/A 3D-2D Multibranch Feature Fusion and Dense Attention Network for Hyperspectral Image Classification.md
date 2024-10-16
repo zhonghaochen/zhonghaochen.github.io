@@ -4,6 +4,7 @@ collection: publications
 date: 2021-11-11
 venue: '11 November'
 ---
+H. Gao, Y. Zhang, Y. Zhang, **Z. Chen**, C. Li, H Zhou<br>
 Micromachines
 [Download paper here](https://www.mdpi.com/2072-666X/12/10/1271)
 
