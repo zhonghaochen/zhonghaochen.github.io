@@ -4,6 +4,7 @@ collection: publications
 date: 2023-06-24
 venue: '24 June'
 ---
+**Z. Chen**, G. Wu, H. Gao, Y. Ding, D. Hong, B. Zhang <br>
 ESWA
 [Download paper here](https://www.sciencedirect.com/science/article/pii/S0957417423013301?via%3Dihub)
 
