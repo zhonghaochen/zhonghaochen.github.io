@@ -4,6 +4,7 @@ collection: publications
 date: 2024-07-09
 venue: '9 July'
 ---
+C Li, R Wang, Z Chen, H Gao, S Xu</br>
 TRES
 [Download paper here](https://www.tandfonline.com/doi/abs/10.1080/01431161.2024.2370500)
 
