@@ -2,10 +2,10 @@
 title: "TL2GH²T: Triple-Path Local-to-Global Network With Hybrid Head Transformer for Hyperspectral Change Detection"
 collection: publications
 date: 2024-08-19
-venue: '19 Augus'
+venue: '19 August
 author: Zhonghao Chen 
 ---
-author: Zhonghao Chen <br>
+Z Chen, Y Wang, SK Roy, H Gao, Y Ding, X Xiao, Z Shao, B Zhang <br>
 IEEE TGRS
 [Download paper here](https://ieeexplore.ieee.org/document/10639462)
 
