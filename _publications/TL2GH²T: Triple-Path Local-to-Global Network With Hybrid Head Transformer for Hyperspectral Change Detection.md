@@ -4,7 +4,7 @@ collection: publications
 date: 2024-08-19
 venue: '19 August'
 ---
-Z. Chen, Y. Wang, SK. Roy, H. Gao, Y. Ding, X. Xiao, Z. Shao, B. Zhang <br>
+**Z. Chen**, Y. Wang, SK. Roy, H. Gao, Y. Ding, X. Xiao, Z. Shao, B. Zhang <br>
 IEEE TGRS
 Download paper here
 
