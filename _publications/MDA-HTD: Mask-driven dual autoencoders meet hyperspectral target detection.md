@@ -4,7 +4,7 @@ collection: publications
 date: 2025-03-08
 venue: '8 Mar'
 ---
-**Z. Chen**; Hongmin Gao; Zhengtao Lu; Yiyan Zhang; Yao Ding; Xin Li; Bing Zhang <br>
+**Zhonghao Chen**; Hongmin Gao; Zhengtao Lu; Yiyan Zhang; Yao Ding; Xin Li; Bing Zhang <br>
 IP&M 2025
 [Download paper here](https://www.sciencedirect.com/science/article/abs/pii/S0306457325000482?via%3Dihub)
 
