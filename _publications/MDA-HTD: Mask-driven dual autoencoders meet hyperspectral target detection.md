@@ -6,7 +6,7 @@ venue: '8 Mar'
 ---
 **Z. Chen**; Hongmin Gao; Zhengtao Lu; Yiyan Zhang; Yao Ding; Xin Li; Bing Zhang <br>
 IP&M
-[Download paper here](https://ieeexplore.ieee.org/abstract/document/10639462)
+[Download paper here](https://www.sciencedirect.com/science/article/abs/pii/S0306457325000482?via%3Dihub)
 
 <div style="text-align: justify;">
 Existing background learning-based hyperspectral (HS) target detection (HTD) methods employ an adversarial autoencoder (AAE) to model the background distribution of HS images, which may lead to pattern collapse. To tackle this challenge, we propose the mask-driven dual autoencoder for HTD (MDA-HTD), an adversarial learning-free spectral learning framework capable of effectively and robustly reconstructing background pixels. Our approach involves three steps: background sample generation, background distribution learning, and HS image reconstruction for target detection. First, we design a locally spatially constrained background spectral selection (LSCBS
