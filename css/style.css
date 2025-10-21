@@ -1386,6 +1386,89 @@ input:focus {
     color: var(--text-dark) !important;
 }
 
+/* ===== Services Section 样式 ===== */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.12) !important;
+}
+
+/* 确保所有journal-item的父容器宽度和高度一致 */
+.service-card .row > [class*='col-'] {
+    display: flex;
+    margin-bottom: 0.75rem;
+}
+
+.journal-item {
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+    padding: 0.75rem 1rem !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.journal-item i {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+}
+
+.journal-item span {
+    display: block;
+    line-height: 1.5;
+    word-break: break-word;
+    hyphens: auto;
+    flex: 1;
+}
+
+.journal-item:hover {
+    background: rgba(0, 86, 179, 0.08) !important;
+    border-color: rgba(0, 86, 179, 0.2) !important;
+    transform: translateX(5px);
+}
+
+/* ===== Services Section 暗黑模式 ===== */
+[data-theme="dark"] #services p {
+    color: var(--text-dark) !important;
+}
+
+[data-theme="dark"] .service-card {
+    background: var(--card-bg) !important;
+    border-left-color: var(--primary-color) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="dark"] .service-card:hover {
+    box-shadow: 0 6px 20px rgba(77, 171, 247, 0.2) !important;
+}
+
+[data-theme="dark"] .service-card h3 {
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .journal-item {
+    background: rgba(77, 171, 247, 0.08) !important;
+    border-color: rgba(77, 171, 247, 0.2) !important;
+}
+
+[data-theme="dark"] .journal-item:hover {
+    background: rgba(77, 171, 247, 0.12) !important;
+    border-color: rgba(77, 171, 247, 0.3) !important;
+}
+
+[data-theme="dark"] .journal-item i {
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .journal-item span {
+    color: var(--text-dark) !important;
+}
+
 /* Removed duplicate dark mode social-link-large styles - see line 1665 */
 
 /* Form controls */
