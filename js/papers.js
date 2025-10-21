@@ -9,6 +9,7 @@ const papersData = [
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
         venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
         journalInfo: "(SCI, Q1, IF:8.6)",
+        esiHighlyCited: true,
         year: 2023,
         type: "journal",
         doi: null,
@@ -180,6 +181,7 @@ const papersData = [
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
         venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
         journalInfo: "(SCI, Q1, IF:8.6)",
+        esiHighlyCited: true,
         year: 2022,
         type: "journal",
         doi: null,
@@ -353,11 +355,12 @@ function createPaperCard(paper) {
                             <div class="publication-venue mb-2">
                                 <i class="fas fa-location-dot me-2 text-muted"></i>
                                 <strong>${paper.type === 'journal' ? 'Journal' : 'Conference'}:</strong>
-                                ${paper.venueUrl ? 
-                                    `<a href="${paper.venueUrl}" class="text-${venueColor}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; font-weight: 500;">${paper.venue}</a>` : 
+                                ${paper.venueUrl ?
+                                    `<a href="${paper.venueUrl}" class="text-${venueColor}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; font-weight: 500;">${paper.venue}</a>` :
                                     `<span class="text-${venueColor}">${paper.venue}</span>`
                                 }, ${paper.year}
                                 ${paper.journalInfo ? `<span class="badge bg-success" style="font-size: 0.75em; font-weight: 500; margin-left: 8px;">${paper.journalInfo}</span>` : ''}
+                                ${paper.esiHighlyCited ? `<span class="badge bg-warning text-dark" style="font-size: 0.75em; font-weight: 600; margin-left: 8px;">🏆 ESI Highly Cited Paper</span>` : ''}
                             </div>
                         </div>
 
