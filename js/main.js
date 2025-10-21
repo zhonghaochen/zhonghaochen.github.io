@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     initGallery();
     initSocialLinks();
     initIconCompatibility();
+
+    // 添加全局点击监听器用于调试
+    document.body.addEventListener('click', function(e) {
+        if (e.target.matches('a[href^="#"], .btn[href^="#"]') || e.target.closest('a[href^="#"], .btn[href^="#"]')) {
+            const link = e.target.matches('a[href^="#"], .btn[href^="#"]') ? e.target : e.target.closest('a[href^="#"], .btn[href^="#"]');
+            console.log('🎯 Global click detected on:', link.getAttribute('href'), '| Theme:', document.documentElement.getAttribute('data-theme'));
+        }
+    }, true);
 });
 
 // ===== Dark Mode Functionality =====
@@ -84,6 +92,7 @@ function initSmoothScroll() {
     let lastClickTime = 0;
     const clickDelay = 100; // 减少延迟以提高响应性
     let scrollInProgress = false;
+    let isBinding = false; // 防止重复绑定
 
     // Enhanced link finder
     function findAllNavigationLinks() {
@@ -118,6 +127,12 @@ function initSmoothScroll() {
 
     // Bind events to all navigation links
     function bindNavigationEvents() {
+        if (isBinding) {
+            console.log('⚠️ Already binding, skipping...');
+            return 0;
+        }
+
+        isBinding = true;
         const navLinks = findAllNavigationLinks();
 
         console.log('🔧 Binding events to', navLinks.length, 'links');
@@ -137,6 +152,7 @@ function initSmoothScroll() {
         });
 
         console.log('✅ Successfully bound', navLinks.length, 'navigation links');
+        isBinding = false;
         return navLinks.length;
     }
 
@@ -147,6 +163,8 @@ function initSmoothScroll() {
                         link.getAttribute('data-scroll-to') || '';
 
         console.log('🔗 Link clicked:', targetId, 'Text:', link.textContent.trim());
+        console.log('   Event:', e.type, 'Target:', e.target);
+        console.log('   Current theme:', document.documentElement.getAttribute('data-theme'));
 
         // 更严格地检查并排除外部链接和特殊链接
         if (targetId.startsWith('http://') || targetId.startsWith('https://') || targetId.startsWith('//')) {
@@ -365,9 +383,14 @@ function initSmoothScroll() {
     const boundLinks = bindNavigationEvents();
     console.log(`Successfully bound events to ${boundLinks} navigation links`);
 
-    // Re-bind after dynamic content loads
+    // Re-bind after dynamic content loads with debouncing
+    let mutationTimeout;
     const observer = new MutationObserver(() => {
-        setTimeout(bindNavigationEvents, 100);
+        clearTimeout(mutationTimeout);
+        mutationTimeout = setTimeout(() => {
+            console.log('🔄 DOM changed, re-binding navigation events...');
+            bindNavigationEvents();
+        }, 500);
     });
 
     observer.observe(document.body, {
