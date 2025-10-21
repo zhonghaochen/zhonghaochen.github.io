@@ -395,41 +395,13 @@
                 console.log(`  Button ${index + 1}:`, btn.getAttribute('href'), '-', btn.textContent.trim());
             });
             
-            // 备用方案：仅为真正的内部锚点链接添加平滑滚动，排除外部链接
+            // 移除了重复的备用平滑滚动代码，由 main.js 统一处理
+            // 只确保外部链接（特别是导师链接）可以正常工作
             setTimeout(function() {
-                console.log('🔧 Adding fallback smooth scroll handlers for internal links only...');
-
-                // 只选择以#开头且不是外部链接的内部链接，排除所有外部链接
-                const allInternalLinks = document.querySelectorAll('a[href^="#"]:not([href*="http"]):not([href*="jszy.hhu.edu.cn"])');
-                allInternalLinks.forEach(function(link) {
-                    // 确保不是外部链接且没有target属性
-                    const href = link.getAttribute('href');
-                    if (href && href !== '#' && href.startsWith('#') && !link.getAttribute('target')) {
-                        link.addEventListener('click', function(e) {
-                            const targetElement = document.querySelector(href);
-                            if (targetElement) {
-                                e.preventDefault();
-                                const navbar = document.querySelector('.navbar');
-                                const navbarHeight = navbar ? navbar.offsetHeight : 70;
-                                const targetPosition = targetElement.offsetTop - navbarHeight - 20;
-
-                                window.scrollTo({
-                                    top: targetPosition,
-                                    behavior: 'smooth'
-                                });
-
-                                console.log('✅ Scrolled to:', href);
-                            }
-                        });
-                    }
-                });
-                console.log('✅ Fallback handlers added to', allInternalLinks.length, 'internal links only');
-
-                // 确保所有外部链接（特别是导师链接）可以正常工作
                 const externalLinks = document.querySelectorAll('a[href^="http"], a[href*="jszy.hhu.edu.cn"], a[target="_blank"]');
                 console.log('🔗 Found', externalLinks.length, 'external links');
                 externalLinks.forEach(function(link) {
-                    // 移除任何可能阻止点击的事件监听器
+                    // 确保外部链接可点击
                     link.style.pointerEvents = 'auto';
                     link.style.cursor = 'pointer';
 
@@ -438,7 +410,7 @@
                         console.log('👨‍🏫 Teacher link confirmed:', link.href, '-', link.textContent.trim());
                     }
                 });
-            }, 1000); // 延迟1秒确保main.js已加载
+            }, 500);
         });
     </script>
 </head>
