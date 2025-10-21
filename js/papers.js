@@ -353,7 +353,7 @@ function createPaperCard(paper) {
                                 <strong>Authors:</strong> ${highlightAuthor(paper.authors)}
                             </div>
                             <div class="publication-venue mb-2">
-                                <i class="fas fa-location-dot me-2 text-muted"></i>
+                                <i class="fas fa-book-open me-2 text-muted"></i>
                                 <strong>${paper.type === 'journal' ? 'Journal' : 'Conference'}:</strong>
                                 ${paper.venueUrl ?
                                     `<a href="${paper.venueUrl}" class="text-${venueColor}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; font-weight: 500;">${paper.venue}</a>` :
