@@ -488,6 +488,8 @@ function initGallery() {
     }
 
       const galleryImages = [
+        'five.jpg',
+        'six.jpg',
         'seven.jpg',
         'eight.jpg',
         'nine.jpg',
