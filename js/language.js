@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initLanguageSystem() {
-    console.log('Initializing language system...');
+    // Initializing language system
     
     // Apply saved language
     applyLanguage(currentLanguage);
@@ -235,7 +235,7 @@ function toggleLanguage() {
     });
     document.dispatchEvent(event);
     
-    console.log('Language switched to:', currentLanguage);
+    // Language switched to: ${currentLanguage}
 }
 
 // Update language button icon/text
@@ -286,7 +286,7 @@ function applyLanguage(lang) {
     // Footer
     updateFooter(t);
     
-    console.log('Language applied:', lang);
+    // Language applied: ${lang}
 }
 
 // Update Navigation
@@ -395,52 +395,63 @@ function updateAboutSection(t) {
         aboutTitle.textContent = t.about.title;
     }
     
-    // Research Focus
-    const researchFocusTitle = document.querySelector('.about-card h4');
-    if (researchFocusTitle && researchFocusTitle.textContent.includes('Research Focus')) {
-        const icon = researchFocusTitle.querySelector('i');
-        researchFocusTitle.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.researchFocus}`;
+    // Get all about cards
+    const aboutCards = document.querySelectorAll('.about-card');
+    
+    if (aboutCards.length >= 3) {
+        // First card: Research Focus
+        const firstCard = aboutCards[0];
+        const firstTitle = firstCard.querySelector('h4');
+        const firstText = firstCard.querySelector('p');
+        
+        if (firstTitle) {
+            const icon = firstTitle.querySelector('i');
+            firstTitle.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.researchFocus}`;
+        }
+        
+        if (firstText) {
+            firstText.textContent = t.about.researchFocusText;
+        }
+        
+        // Second card: Research Interests
+        const secondCard = aboutCards[1];
+        const secondTitle = secondCard.querySelector('h4');
+        const interestsList = secondCard.querySelectorAll('ul li');
+        
+        if (secondTitle) {
+            const icon = secondTitle.querySelector('i');
+            secondTitle.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.researchInterests}`;
+        }
+        
+        if (interestsList.length > 0) {
+            const interestsArray = [
+                t.about.interests.ai,
+                t.about.interests.rs,
+                t.about.interests.cv,
+                t.about.interests.gis
+            ];
+            
+            interestsList.forEach((item, index) => {
+                if (index < interestsArray.length) {
+                    item.textContent = interestsArray[index];
+                }
+            });
+        }
+        
+        // Third card: Technical Expertise
+        const thirdCard = aboutCards[2];
+        const thirdTitle = thirdCard.querySelector('h4');
+        const thirdText = thirdCard.querySelector('p');
+        
+        if (thirdTitle) {
+            const icon = thirdTitle.querySelector('i');
+            thirdTitle.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.technicalExpertise}`;
+        }
+        
+        if (thirdText) {
+            thirdText.textContent = t.about.technicalText;
+        }
     }
-    
-    const researchFocusText = document.querySelector('.about-card p');
-    if (researchFocusText && researchFocusText.textContent.includes('accuracy and efficiency')) {
-        researchFocusText.textContent = t.about.researchFocusText;
-    }
-    
-    // Research Interests
-    const interestsTitles = document.querySelectorAll('.about-card h4');
-    interestsTitles.forEach(title => {
-        if (title.textContent.includes('Research Interests')) {
-            const icon = title.querySelector('i');
-            title.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.researchInterests}`;
-        } else if (title.textContent.includes('Technical Expertise')) {
-            const icon = title.querySelector('i');
-            title.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.technicalExpertise}`;
-        }
-    });
-    
-    // Research Interests list items
-    const interestsList = document.querySelectorAll('.about-card ul li');
-    const interestsArray = [
-        t.about.interests.ai,
-        t.about.interests.rs,
-        t.about.interests.cv,
-        t.about.interests.gis
-    ];
-    
-    interestsList.forEach((item, index) => {
-        if (index < interestsArray.length) {
-            item.textContent = interestsArray[index];
-        }
-    });
-    
-    // Technical Expertise text
-    const techText = document.querySelectorAll('.about-card p');
-    techText.forEach(p => {
-        if (p.textContent.includes('Deep Learning') || p.textContent.includes('深度学习')) {
-            p.textContent = t.about.technicalText;
-        }
-    });
 }
 
 // Update Publications Section
