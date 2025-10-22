@@ -1782,29 +1782,82 @@ input:focus {
     opacity: 0.9;
 }
 
-/* 暗色模式切换按钮 - 明亮模式 */
+/* 语言切换按钮和主题切换按钮 - 明亮模式 */
+#languageToggle,
 #darkModeToggle {
-    background: rgba(0, 86, 179, 0.08);
-    border: 1px solid rgba(0, 86, 179, 0.2);
-    color: #0056b3;
+    background: rgba(0, 86, 179, 0.1) !important;
+    border: 2px solid #0056b3 !important;
+    color: #0056b3 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 86, 179, 0.15);
 }
 
-#darkModeToggle:hover {
-    background: rgba(0, 86, 179, 0.15);
-    border-color: rgba(0, 86, 179, 0.3);
-    color: #003d82;
+#languageToggle i,
+#darkModeToggle i {
+    color: #0056b3 !important;
 }
+
+#languageToggle .lang-text {
+    color: #0056b3 !important;
+    font-weight: 600;
+}
+
+#languageToggle:hover,
+#darkModeToggle:hover {
+    background: rgba(0, 86, 179, 0.2) !important;
+    border-color: #003d82 !important;
+    color: #003d82 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.25);
+}
+
+#languageToggle:hover i,
+#darkModeToggle:hover i {
+    color: #003d82 !important;
+}
+
+#languageToggle:hover .lang-text {
+    color: #003d82 !important;
+}
+
 
 /* 暗色模式切换按钮增强 - 暗黑模式 */
+[data-theme="dark"] #languageToggle,
 [data-theme="dark"] #darkModeToggle {
-    background: rgba(77, 171, 247, 0.2);
-    border: 1px solid rgba(77, 171, 247, 0.3);
-    color: #4dabf7;
+    background: rgba(77, 171, 247, 0.15) !important;
+    border: 2px solid #4dabf7 !important;
+    color: #4dabf7 !important;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(77, 171, 247, 0.2);
 }
 
+[data-theme="dark"] #languageToggle i,
+[data-theme="dark"] #darkModeToggle i {
+    color: #4dabf7 !important;
+}
+
+[data-theme="dark"] #languageToggle .lang-text {
+    color: #4dabf7 !important;
+    font-weight: 600;
+}
+
+[data-theme="dark"] #languageToggle:hover,
 [data-theme="dark"] #darkModeToggle:hover {
-    /* 简化hover效果，防止抖动 */
-    opacity: 0.8;
+    background: rgba(77, 171, 247, 0.3) !important;
+    border-color: #74c0fc !important;
+    color: #74c0fc !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(77, 171, 247, 0.3);
+}
+
+[data-theme="dark"] #languageToggle:hover i,
+[data-theme="dark"] #darkModeToggle:hover i {
+    color: #74c0fc !important;
+}
+
+[data-theme="dark"] #languageToggle:hover .lang-text {
+    color: #74c0fc !important;
 }
 
 /* 卡片暗色模式增强 */
