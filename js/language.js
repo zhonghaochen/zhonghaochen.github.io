@@ -353,8 +353,8 @@ function updateHeroSection(t) {
                     我是${hhuClone.outerHTML}${collegeClone.outerHTML}的博士研究生，导师为
                     ${prof1Clone.outerHTML}
                     教授和
-                    ${prof2Clone.outerHTML}教授。
-                    我的研究专注于开发先进的人工智能方法用于遥感图像解译，将深度学习技术与遥感数据分析相结合，设计智能化的遥感图像解译算法。
+                    ${prof2Clone.outerHTML}研究员。
+                    我的研究专注于将深度学习技术与遥感数据分析相结合，设计智能化的图像处理算法，将人工智能方法用于遥感图像解译工作。
                 `;
             } else {
                 introPara.innerHTML = `

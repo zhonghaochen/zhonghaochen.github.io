@@ -475,6 +475,79 @@ function initNavbar() {
             }
         });
     }
+    
+    // 手机端菜单自动收起功能
+    initMobileMenuAutoClose();
+}
+
+// 手机端菜单自动收起
+function initMobileMenuAutoClose() {
+    const navbar = document.querySelector('.navbar');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    if (!navbarToggler || !navbarCollapse || !navbar) {
+        console.log('Mobile menu elements not found');
+        return;
+    }
+    
+    console.log('Initializing mobile menu auto-close functionality');
+    
+    // 检查菜单是否展开
+    function isMenuOpen() {
+        return navbarCollapse.classList.contains('show');
+    }
+    
+    // 关闭菜单
+    function closeMenu() {
+        if (isMenuOpen()) {
+            console.log('Closing mobile menu');
+            // 使用Bootstrap的collapse API
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+            bsCollapse.hide();
+        }
+    }
+    
+    // 点击页面其他地方时关闭菜单
+    document.addEventListener('click', function(e) {
+        // 检查菜单是否展开
+        if (!isMenuOpen()) {
+            return;
+        }
+        
+        // 检查点击是否在导航栏之外
+        const clickedInsideNavbar = navbar.contains(e.target);
+        
+        if (!clickedInsideNavbar) {
+            console.log('Clicked outside navbar, closing menu');
+            closeMenu();
+        }
+    });
+    
+    // 点击菜单项时关闭菜单
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            console.log('Nav link clicked, closing menu');
+            // 延迟关闭，让点击动画完成
+            setTimeout(() => {
+                closeMenu();
+            }, 150);
+        });
+    });
+    
+    // 点击语言切换和主题切换按钮后也关闭菜单
+    const utilityButtons = document.querySelectorAll('#languageToggle, #darkModeToggle');
+    utilityButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            console.log('Utility button clicked, closing menu');
+            setTimeout(() => {
+                closeMenu();
+            }, 150);
+        });
+    });
+    
+    console.log('Mobile menu auto-close initialized successfully');
 }
 
 // ===== Gallery Functionality =====
@@ -646,6 +719,18 @@ function trackSocialLinkClick(platform) {
 // Show WeChat QR Code
 function showWeChatQR() {
     console.log('Showing WeChat QR code with enhanced design...');
+    
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        contact: {
+            scanToConnect: 'Scan to Connect',
+            weChatID: 'WeChat ID',
+            copyID: 'Copy ID',
+            done: 'Done',
+            scanDescription: 'Scan the QR code with WeChat to add me as a contact',
+            qrCodeUnavailable: 'QR Code Unavailable'
+        }
+    };
 
     // 创建弹窗遮罩层
     const modal = document.createElement('div');
@@ -661,7 +746,7 @@ function showWeChatQR() {
             <div class="wechat-modal-icon">
                 <i class="fab fa-weixin"></i>
             </div>
-            <h3 class="wechat-modal-title">Scan to Connect</h3>
+            <h3 class="wechat-modal-title">${t.contact.scanToConnect}</h3>
             <button class="wechat-modal-close" onclick="closeWeChatModal()">
                 <i class="fas fa-times"></i>
             </button>
@@ -678,7 +763,7 @@ function showWeChatQR() {
                     <div class="qr-code-fallback">
                         <i class="fab fa-weixin"></i>
                         <p>QR Code</p>
-                        <small>Unavailable</small>
+                        <small>${t.contact.qrCodeUnavailable}</small>
                     </div>
                     <div class="qr-code-loading">
                         <div class="loading-spinner"></div>
@@ -690,18 +775,18 @@ function showWeChatQR() {
                 <div class="wechat-id-section">
                     <h4 class="wechat-id-label">
                         <i class="fab fa-weixin"></i>
-                        WeChat ID
+                        ${t.contact.weChatID}
                     </h4>
                     <div class="wechat-id-container">
                         <code class="wechat-id">YIYAN_WeChat</code>
-                        <button class="copy-btn" onclick="copyWeChatID()" title="Copy WeChat ID">
+                        <button class="copy-btn" onclick="copyWeChatID()" title="${t.contact.copyID}">
                             <i class="fas fa-copy"></i>
                         </button>
                     </div>
                 </div>
 
                 <p class="wechat-description">
-                    Scan the QR code with WeChat to add me as a contact
+                    ${t.contact.scanDescription}
                 </p>
             </div>
         </div>
@@ -709,11 +794,11 @@ function showWeChatQR() {
         <div class="wechat-modal-footer">
             <button class="wechat-btn wechat-btn-primary" onclick="copyWeChatID()">
                 <i class="fas fa-copy me-2"></i>
-                Copy ID
+                ${t.contact.copyID}
             </button>
             <button class="wechat-btn wechat-btn-secondary" onclick="closeWeChatModal()">
                 <i class="fas fa-check me-2"></i>
-                Done
+                ${t.contact.done}
             </button>
         </div>
     `;
@@ -782,11 +867,19 @@ function bindWeChatModalEvents(modal) {
 
 // Copy WeChat ID to clipboard
 function copyWeChatID() {
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        contact: {
+            idCopied: 'WeChat ID copied to clipboard!',
+            copyFailed: 'Failed to copy WeChat ID'
+        }
+    };
+    
     const wechatID = 'YIYAN_WeChat'; // 您的微信ID
 
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(wechatID).then(() => {
-            showNotification('WeChat ID copied to clipboard!', 'success');
+            showNotification(t.contact.idCopied, 'success');
         }).catch(err => {
             console.error('Failed to copy WeChat ID: ', err);
             fallbackCopyTextToClipboard(wechatID);
@@ -798,6 +891,14 @@ function copyWeChatID() {
 
 // Fallback for older browsers
 function fallbackCopyTextToClipboard(text) {
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        contact: {
+            idCopied: 'WeChat ID copied to clipboard!',
+            copyFailed: 'Failed to copy WeChat ID'
+        }
+    };
+    
     const textArea = document.createElement('textarea');
     textArea.value = text;
     textArea.style.position = 'fixed';
@@ -810,13 +911,13 @@ function fallbackCopyTextToClipboard(text) {
     try {
         const successful = document.execCommand('copy');
         if (successful) {
-            showNotification('WeChat ID copied to clipboard!', 'success');
+            showNotification(t.contact.idCopied, 'success');
         } else {
-            showNotification('Failed to copy WeChat ID', 'error');
+            showNotification(t.contact.copyFailed, 'error');
         }
     } catch (err) {
         console.error('Fallback: Oops, unable to copy', err);
-        showNotification('Failed to copy WeChat ID', 'error');
+        showNotification(t.contact.copyFailed, 'error');
     }
 
     document.body.removeChild(textArea);
