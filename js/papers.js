@@ -291,6 +291,13 @@ function sortPapers(papers) {
 // Initialize papers system
 document.addEventListener('DOMContentLoaded', function() {
     initPapersSystem();
+    
+    // Listen for language changes
+    document.addEventListener('languageChanged', function(e) {
+        console.log('Language changed, re-rendering publications...');
+        const sortedPapers = sortPapers([...papersData]);
+        renderPapers(sortedPapers);
+    });
 });
 
 function initPapersSystem() {
@@ -329,8 +336,25 @@ function highlightAuthor(authors) {
 
 // ===== Create publication card with model image =====
 function createPaperCard(paper) {
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        publications: {
+            journalArticle: 'Journal Article',
+            conferenceArticle: 'Conference Paper',
+            authors: 'Authors',
+            journal: 'Journal',
+            conference: 'Conference',
+            pdf: 'PDF',
+            doi: 'DOI',
+            code: 'Code',
+            esiHighlyCited: '🏆 ESI Highly Cited Paper',
+            noModelDiagram: 'No model diagram available',
+            clickToEnlarge: 'Click to enlarge'
+        }
+    };
+    
     const typeIcon = paper.type === 'journal' ? 'fa-book' : 'fa-users';
-    const typeText = paper.type === 'journal' ? 'Journal Article' : 'Conference Paper';
+    const typeText = paper.type === 'journal' ? t.publications.journalArticle : t.publications.conferenceArticle;
     const venueColor = paper.type === 'journal' ? 'primary' : 'success';
 
     return `
@@ -350,17 +374,17 @@ function createPaperCard(paper) {
                         <div class="publication-meta mb-3">
                             <div class="publication-authors mb-2">
                                 <i class="fas fa-user-friends me-2 text-muted"></i>
-                                <strong>Authors:</strong> ${highlightAuthor(paper.authors)}
+                                <strong>${t.publications.authors}:</strong> ${highlightAuthor(paper.authors)}
                             </div>
                             <div class="publication-venue mb-2">
                                 <i class="fas fa-book-open me-2 text-muted"></i>
-                                <strong>${paper.type === 'journal' ? 'Journal' : 'Conference'}:</strong>
+                                <strong>${paper.type === 'journal' ? t.publications.journal : t.publications.conference}:</strong>
                                 ${paper.venueUrl ?
                                     `<a href="${paper.venueUrl}" class="text-${venueColor}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; font-weight: 500;">${paper.venue}</a>` :
                                     `<span class="text-${venueColor}">${paper.venue}</span>`
                                 }, ${paper.year}
                                 ${paper.journalInfo ? `<span class="badge bg-success" style="font-size: 0.75em; font-weight: 500; margin-left: 8px;">${paper.journalInfo}</span>` : ''}
-                                ${paper.esiHighlyCited ? `<span class="badge bg-warning text-dark" style="font-size: 0.75em; font-weight: 600; margin-left: 8px;">🏆 ESI Highly Cited Paper</span>` : ''}
+                                ${paper.esiHighlyCited ? `<span class="badge bg-warning text-dark" style="font-size: 0.75em; font-weight: 600; margin-left: 8px;">${t.publications.esiHighlyCited}</span>` : ''}
                             </div>
                         </div>
 
@@ -372,17 +396,17 @@ function createPaperCard(paper) {
                         <div class="publication-links">
                             ${paper.pdf ? `
                                 <a href="${paper.pdf}" class="btn btn-sm btn-outline-primary" target="_blank">
-                                    <i class="fas fa-file-pdf me-1"></i>PDF
+                                    <i class="fas fa-file-pdf me-1"></i>${t.publications.pdf}
                                 </a>
                             ` : ''}
                             ${paper.doi ? `
                                 <a href="https://doi.org/${paper.doi.replace(/^https?:\/\/doi\.org\//, '')}" class="btn btn-sm btn-outline-primary" target="_blank">
-                                    <i class="fas fa-link me-1"></i>DOI
+                                    <i class="fas fa-link me-1"></i>${t.publications.doi}
                                 </a>
                             ` : ''}
                             ${paper.code ? `
                                 <a href="${paper.code}" class="btn btn-sm btn-outline-primary" target="_blank">
-                                    <i class="fas fa-code me-1"></i>Code
+                                    <i class="fas fa-code me-1"></i>${t.publications.code}
                                 </a>
                             ` : ''}
                             ${createCitationBadge(paper)}
@@ -401,6 +425,15 @@ function createPaperCard(paper) {
 
 // ===== Create citation badge =====
 function createCitationBadge(paper) {
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        publications: {
+            citations: 'citations',
+            viewCitations: 'View citations on Google Scholar',
+            citationCount: 'Citation count'
+        }
+    };
+    
     // If no citation data is available, return empty string
     if (paper.citations === undefined || paper.citations === null) {
         return '';
@@ -420,7 +453,7 @@ function createCitationBadge(paper) {
         <span class="citation-badge">
             <i class="fas fa-quote-right me-1"></i>
             <span class="citation-count">${paper.citations}</span>
-            <span class="citation-label">citations</span>
+            <span class="citation-label">${t.publications.citations}</span>
         </span>
     `;
 
@@ -429,7 +462,7 @@ function createCitationBadge(paper) {
             <a href="${scholarUrl}" 
                class="btn btn-sm citation-link-highlight" 
                target="_blank"
-               title="View citations on Google Scholar"
+               title="${t.publications.viewCitations}"
                data-citations="${paper.citations}">
                 ${badgeContent}
             </a>
@@ -437,7 +470,7 @@ function createCitationBadge(paper) {
     } else {
         return `
             <span class="btn btn-sm citation-link-highlight disabled" 
-                  title="Citation count: ${paper.citations}"
+                  title="${t.publications.citationCount}: ${paper.citations}"
                   data-citations="${paper.citations}">
                 ${badgeContent}
             </span>
@@ -447,11 +480,19 @@ function createCitationBadge(paper) {
 
 // ===== Create model image section =====
 function createModelImageSection(paper) {
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        publications: {
+            noModelDiagram: 'No model diagram available',
+            clickToEnlarge: 'Click to enlarge'
+        }
+    };
+    
     if (!paper.hasModelImage || !paper.modelImage) {
         return `
             <div class="model-placeholder">
                 <i class="fas fa-image fa-3x text-muted"></i>
-                <p class="mt-2 text-muted">No model diagram available</p>
+                <p class="mt-2 text-muted">${t.publications.noModelDiagram}</p>
             </div>
         `;
     }
@@ -470,7 +511,7 @@ function createModelImageSection(paper) {
             ` : ''}
             <div class="model-overlay">
                 <i class="fas fa-search-plus"></i>
-                <span>Click to enlarge</span>
+                <span>${t.publications.clickToEnlarge}</span>
             </div>
         </div>
     `;
@@ -478,6 +519,13 @@ function createModelImageSection(paper) {
 
 // ===== Open model image in lightbox =====
 function openModelImage(imageSrc, imageAlt, imageCaption) {
+    // Get current translations
+    const t = typeof getCurrentTranslation === 'function' ? getCurrentTranslation() : {
+        publications: {
+            download: 'Download'
+        }
+    };
+    
     // Create lightbox element
     const lightbox = document.createElement('div');
     lightbox.className = 'model-lightbox';
@@ -499,7 +547,7 @@ function openModelImage(imageSrc, imageAlt, imageCaption) {
             </div>
             <div class="lightbox-footer">
                 <button class="btn btn-outline-primary btn-sm" onclick="downloadModelImage('${imageSrc}', '${imageAlt}')">
-                    <i class="fas fa-download me-1"></i>Download
+                    <i class="fas fa-download me-1"></i>${t.publications.download}
                 </button>
             </div>
         </div>
