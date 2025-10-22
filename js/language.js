@@ -354,7 +354,7 @@ function updateHeroSection(t) {
                     ${prof1Clone.outerHTML}
                     教授和
                     ${prof2Clone.outerHTML}教授。
-                    我的研究专注于开发先进的人工智能方法用于遥感图像解译，将深度学习技术与遥感数据分析相结合，开发智能化的自动图像解译系统。
+                    我的研究专注于开发先进的人工智能方法用于遥感图像解译，将深度学习技术与遥感数据分析相结合，设计智能化的遥感图像解译算法。
                 `;
             } else {
                 introPara.innerHTML = `
