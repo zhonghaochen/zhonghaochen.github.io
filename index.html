@@ -596,33 +596,6 @@
             <!-- Publications List -->
             <div class="row" id="publicationsList">
                 <!-- Publication items will be dynamically added here -->
-                <div class="col-lg-12 mb-3 publication-item" data-aos="fade-up" data-type="journal">
-                    <div class="publication-card">
-                        <div class="publication-content">
-                            <h4 class="publication-title" style="font-size: 1.1rem;">Sample Paper Title: Deep Learning Methods for Remote Sensing Image Semantic Segmentation</h4>
-                            <div class="publication-authors mb-2" style="font-size: 0.95rem;">
-                                <strong>Authors:</strong> Zhang San, Li Si, Wang Wu
-                            </div>
-                            <div class="publication-venue mb-2" style="font-size: 0.95rem;">
-                                <strong>Journal:</strong> Journal of Remote Sensing, 2024
-                            </div>
-                            <div class="publication-abstract mb-3" style="font-size: 0.95rem;">
-                                <p>This paper proposes a novel deep learning model for remote sensing image semantic segmentation tasks...</p>
-                            </div>
-                            <div class="publication-links">
-                                <a href="#" class="btn btn-sm btn-outline-primary" style="transition: none !important; transform: none !important; animation: none !important;">
-                                    <i class="fas fa-file-pdf me-1"></i>PDF
-                                </a>
-                                <a href="#" class="btn btn-sm btn-outline-primary" style="transition: none !important; transform: none !important; animation: none !important;">
-                                    <i class="fas fa-link me-1"></i>DOI
-                                </a>
-                                <a href="#" class="btn btn-sm btn-outline-primary" style="transition: none !important; transform: none !important; animation: none !important;">
-                                    <i class="fas fa-code me-1"></i>Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -676,7 +649,14 @@
                                     <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Cybernetics</span>
                                 </div>
                             </div>
-                            
+
+                            <div class="col-md-6">
+                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Circuits and Systems for Video Technology</span>
+                                </div>
+                            </div>
+
                             <div class="col-md-6">
                                 <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
@@ -705,7 +685,14 @@
                                     <span style="font-weight: 500; color: #2d3748;">Information Fusion</span>
                                 </div>
                             </div>
-                            
+
+                            <div class="col-md-6">
+                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
+                                    <span style="font-weight: 500; color: #2d3748;">ISPRS Journal of Photogrammetry and Remote Sensing</span>
+                                </div>
+                            </div>
+
                             <div class="col-md-6">
                                 <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
@@ -835,21 +822,23 @@
 
     <!-- JavaScript Files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/config.js"></script>
     <script src="js/language.js"></script>
     <script src="js/main.js"></script>
     <script src="js/papers.js"></script>
-    <script src="js/photo-gallery.js"></script>
 
-    <!-- Enhanced Icon Fallback Script -->
+    <!-- Simplified Icon Fallback Script -->
     <script>
-        // Enhanced Font Awesome detection and fallback system
-        let fontAwesomeLoaded = false;
-        let fallbackAttempts = 0;
-        const maxFallbackAttempts = 3;
+        // Simple Font Awesome detection and fallback system
+        const unicodeIcons = {
+            'fa-github': { symbol: '⚡', text: 'GitHub' },
+            'fa-graduation-cap': { symbol: '🎓', text: 'Scholar' },
+            'fa-researchgate': { symbol: '🔬', text: 'Research' },
+            'fa-weixin': { symbol: '💬', text: 'WeChat' },
+            'fa-envelope': { symbol: '✉️', text: 'Email' }
+        };
 
-        // Check if Font Awesome is properly loaded
-        function checkFontAwesomeLoaded() {
+        function initializeIconFallbacks() {
+            // Check if Font Awesome is loaded
             const testElement = document.createElement('i');
             testElement.className = 'fas fa-home';
             testElement.style.position = 'absolute';
@@ -861,62 +850,24 @@
                              computedStyle.fontFamily.includes('FontAwesome');
 
             document.body.removeChild(testElement);
-            return isLoaded;
+
+            if (!isLoaded) {
+                console.warn('Font Awesome not loaded, using Unicode fallbacks');
+                addUnicodeFallbacks();
+            }
         }
 
-        // Try different CDN sources
-        function tryAlternativeCDN() {
-            const cdns = [
-                { id: 'fontawesome-primary', url: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' },
-                { id: 'fontawesome-backup1', url: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css' },
-                { id: 'fontawesome-backup2', url: 'https://stackpath.bootstrapcdn.com/font-awesome/6.4.0/css/all.min.css' }
-            ];
-
-            cdns.forEach((cdn, index) => {
-                const link = document.getElementById(cdn.id);
-                if (link && link.sheet) {
-                    try {
-                        const rules = link.sheet.cssRules || link.sheet.rules;
-                        if (rules && rules.length > 0) {
-                            console.log(`Font Awesome loaded from CDN ${index + 1}`);
-                            fontAwesomeLoaded = true;
-                            return true;
-                        }
-                    } catch (e) {
-                        console.log(`CDN ${index + 1} not accessible, trying next...`);
-                    }
-                }
-            });
-            return false;
-        }
-
-        // Unicode fallback icons
-        const unicodeIcons = {
-            'fa-github': { symbol: '⚡', text: 'Git' },
-            'fa-graduation-cap': { symbol: '🎓', text: 'Scholar' },
-            'fa-researchgate': { symbol: '🔬', text: 'Research' },
-            'fa-weixin': { symbol: '💬', text: 'WeChat' },
-            'fa-user': { symbol: '👤', text: 'About' },
-            'fa-file-alt': { symbol: '📄', text: 'Papers' },
-            'fa-envelope': { symbol: '✉️', text: 'Email' },
-            'fa-graduation-cap': { symbol: '🎓', text: 'Graduate' }
-        };
-
-        // Add Unicode fallback icons
         function addUnicodeFallbacks() {
-            console.log('Adding Unicode fallback icons...');
             document.querySelectorAll('.fab, .fas, .far').forEach(icon => {
                 const iconClass = Array.from(icon.classList).find(cls => cls.startsWith('fa-') && !cls.includes('fa-lg') && !cls.includes('fa-2x'));
                 if (iconClass && unicodeIcons[iconClass]) {
                     const fallback = unicodeIcons[iconClass];
                     const parent = icon.parentElement;
-                    const title = parent.getAttribute('title') || fallback.text;
 
                     // Create Unicode span
                     const unicodeSpan = document.createElement('span');
                     unicodeSpan.innerHTML = `<span style="font-size: ${icon.classList.contains('fa-2x') ? '2em' : '1.2em'}; margin-right: 0.5em;">${fallback.symbol}</span><span style="font-size: 0.8em;">${fallback.text}</span>`;
                     unicodeSpan.className = 'unicode-fallback';
-                    unicodeSpan.style.cssText = 'display: inline-flex; align-items: center; justify-content: center;';
 
                     // Hide original icon and add fallback
                     icon.style.display = 'none';
@@ -925,347 +876,11 @@
             });
         }
 
-        // Enhanced fallback system
-        function initializeIconFallbacks() {
-            console.log('Initializing enhanced icon fallback system...');
-
-            // Check if Font Awesome is loaded
-            if (checkFontAwesomeLoaded()) {
-                console.log('Font Awesome loaded successfully');
-                fontAwesomeLoaded = true;
-                return;
-            }
-
-            // Try alternative CDNs
-            if (tryAlternativeCDN()) {
-                return;
-            }
-
-            // If still not loaded, add Unicode fallbacks
-            console.warn('Font Awesome not loaded, using Unicode fallbacks');
-            addUnicodeFallbacks();
-
-            // Add visual indicator and comprehensive monitoring
-            setTimeout(() => {
-                const notification = document.createElement('div');
-                notification.className = 'icon-loading-notification';
-                notification.innerHTML = `
-                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                        <span style="font-size: 16px; margin-right: 8px;">⚠️</span>
-                        <strong>Icon Loading Issues</strong>
-                    </div>
-                    <div style="font-size: 12px; opacity: 0.9;">
-                        Some icons may not display correctly due to network restrictions.
-                        <button onclick="this.parentElement.parentElement.remove(); this.parentElement.parentElement.style.display='none';"
-                                style="margin-left: 10px; padding: 2px 8px; font-size: 11px; background: rgba(0,0,0,0.2); border: none; border-radius: 3px; color: inherit; cursor: pointer;">
-                            Dismiss
-                        </button>
-                    </div>
-                `;
-                document.body.appendChild(notification);
-
-                // Trigger display with slight delay for animation
-                setTimeout(() => {
-                    notification.classList.add('show');
-                }, 100);
-
-                // Auto-hide after 8 seconds
-                setTimeout(() => {
-                    if (notification && notification.parentNode) {
-                        notification.classList.remove('show');
-                        setTimeout(() => {
-                            if (notification.parentNode) {
-                                notification.parentNode.removeChild(notification);
-                            }
-                        }, 300);
-                    }
-                }, 8000);
-
-                // Add comprehensive debug info
-                logSystemStatus();
-            }, 1000);
-        }
-
-        // Retry mechanism
-        function retryIconLoading() {
-            if (fontAwesomeLoaded || fallbackAttempts >= maxFallbackAttempts) {
-                return;
-            }
-
-            fallbackAttempts++;
-            console.log(`Icon loading retry attempt ${fallbackAttempts}/${maxFallbackAttempts}`);
-
-            setTimeout(() => {
-                if (!fontAwesomeLoaded) {
-                    initializeIconFallbacks();
-                    if (!fontAwesomeLoaded && fallbackAttempts < maxFallbackAttempts) {
-                        retryIconLoading();
-                    }
-                }
-            }, 2000 * fallbackAttempts);
-        }
-
         // Initialize on DOM ready
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(initializeIconFallbacks, 500);
-            retryIconLoading();
         });
 
-        // Also try on window load as fallback
-        window.addEventListener('load', function() {
-            if (!fontAwesomeLoaded) {
-                console.log('Window load triggered - final fallback attempt');
-                initializeIconFallbacks();
-            }
-
-            // Final system status report
-            setTimeout(logSystemStatus, 2000);
-        });
-
-        // Comprehensive system status logging
-        function logSystemStatus() {
-            console.group('🔍 Comprehensive System Status Report');
-
-            // Font Awesome status
-            console.log('📁 Font Awesome Status:', {
-                loaded: fontAwesomeLoaded,
-                cdnLinks: document.querySelectorAll('link[href*="font-awesome"]').length,
-                testElement: checkFontAwesomeLoaded()
-            });
-
-            // Icon statistics
-            const allIcons = document.querySelectorAll('.fab, .fas, .far');
-            const visibleIcons = Array.from(allIcons).filter(icon => {
-                const style = window.getComputedStyle(icon);
-                return style.display !== 'none' && style.visibility !== 'hidden';
-            });
-
-            console.log('🎨 Icon Statistics:', {
-                total: allIcons.length,
-                visible: visibleIcons.length,
-                hidden: allIcons.length - visibleIcons.length,
-                fallbackApplied: document.querySelectorAll('.unicode-fallback, .icon-fallback').length
-            });
-
-            // Button functionality status
-            const buttons = document.querySelectorAll('.btn[href^="#"], a[href^="#"]');
-            console.log('🖱️ Button Status:', {
-                totalNavigationButtons: buttons.length,
-                eventListenersBound: buttons.length > 0,
-                scrollTargets: Array.from(buttons).map(btn => btn.getAttribute('href')).filter(href => href && href !== '#')
-            });
-
-            // CSS and resources loading
-            const stylesheets = document.querySelectorAll('link[rel="stylesheet"]');
-            console.log('📄 Resources Status:', {
-                stylesheetsLoaded: stylesheets.length,
-                localIconStylesheet: document.querySelector('link[href*="local-icons"]') ? 'Yes' : 'No',
-                customCSS: document.querySelector('link[href*="style.css"]') ? 'Yes' : 'No'
-            });
-
-            // Theme status
-            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-            console.log('🌓 Theme Status:', {
-                current: currentTheme,
-                localStorage: localStorage.getItem('theme'),
-                systemPreference: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-            });
-
-            // Performance metrics
-            const loadTime = performance.now();
-            console.log('⚡ Performance:', {
-                domContentLoaded: loadTime.toFixed(2) + 'ms',
-                memoryUsage: performance.memory ? (performance.memory.usedJSHeapSize / 1048576).toFixed(2) + 'MB' : 'N/A'
-            });
-
-            // Network connectivity
-            console.log('🌐 Network:', {
-                online: navigator.onLine,
-                connection: navigator.connection ? navigator.connection.effectiveType : 'N/A'
-            });
-
-            console.groupEnd();
-
-            // Store status for debugging
-            window.systemStatus = {
-                timestamp: new Date().toISOString(),
-                fontAwesome: fontAwesomeLoaded,
-                icons: {
-                    total: allIcons.length,
-                    visible: visibleIcons.length,
-                    fallback: document.querySelectorAll('.unicode-fallback, .icon-fallback').length
-                },
-                buttons: buttons.length,
-                theme: currentTheme,
-                performance: loadTime
-            };
-
-            // Make status available globally for debugging
-            window.getSystemStatus = () => window.systemStatus;
-            window.debugSystem = logSystemStatus;
-        }
-
-        // Add real-time monitoring
-        function startRealTimeMonitoring() {
-            // Monitor theme changes
-            const themeObserver = new MutationObserver((mutations) => {
-                mutations.forEach((mutation) => {
-                    if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-                        console.log('🔄 Theme changed to:', document.documentElement.getAttribute('data-theme'));
-                    }
-                });
-            });
-
-            themeObserver.observe(document.documentElement, {
-                attributes: true,
-                attributeFilter: ['data-theme']
-            });
-
-            // Monitor button clicks - 只监控内部导航链接，排除外部链接
-            document.addEventListener('click', (e) => {
-                // 只监控以#开头的内部链接，排除所有外部链接和导师链接
-                if (e.target.matches('.btn[href^="#"], a[href^="#"]') &&
-                    !e.target.matches('a[href*="http"]') &&
-                    !e.target.matches('a[href*="jszy.hhu.edu.cn"]') &&
-                    !e.target.hasAttribute('target')) {
-                    console.log('🖱️ Internal navigation button clicked:', e.target.getAttribute('href'));
-                }
-
-                // 特别监控导师链接点击
-                if (e.target.matches('.supervisor-link') || e.target.closest('.supervisor-link')) {
-                    console.log('👨‍🏫 Supervisor link clicked:', e.target.href || e.target.closest('.supervisor-link').href);
-                    // 不阻止任何行为，让导师链接自然工作
-                }
-            });
-
-            // Monitor scroll events
-            let scrollTimeout;
-            window.addEventListener('scroll', () => {
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(() => {
-                    console.log('📜 Scroll position:', window.pageYOffset);
-                }, 1000);
-            });
-        }
-
-        // Start monitoring after page loads
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', startRealTimeMonitoring);
-        } else {
-            startRealTimeMonitoring();
-        }
-
-        // Add keyboard shortcuts for debugging
-        document.addEventListener('keydown', (e) => {
-            // Ctrl+Shift+D: Debug system status
-            if (e.ctrlKey && e.shiftKey && e.key === 'D') {
-                e.preventDefault();
-                logSystemStatus();
-            }
-
-            // Ctrl+Shift+I: Toggle icon debugging
-            if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-                e.preventDefault();
-                document.querySelectorAll('.fab, .fas, .far').forEach(icon => {
-                    icon.style.outline = icon.style.outline ? '' : '2px solid red';
-                    icon.style.outlineOffset = '2px';
-                });
-            }
-        });
-
-        // Make debugging functions globally available
-        window.iconDebugMode = {
-            status: logSystemStatus,
-            monitor: startRealTimeMonitoring,
-            testFontAwesome: checkFontAwesomeLoaded,
-            showAllIcons: () => {
-                document.querySelectorAll('.fab, .fas, .far').forEach(icon => {
-                    icon.style.display = 'inline-block';
-                    icon.style.visibility = 'visible';
-                });
-            }
-        };
-
-        console.log('🚀 Enhanced icon system initialized with monitoring');
-        console.log('💡 Debug shortcuts: Ctrl+Shift+D (status), Ctrl+Shift+I (toggle icon outlines)');
-        console.log('📊 Use window.iconDebugMode or window.getSystemStatus() for detailed information');
-
-        // ===== 导师链接专用修复代码 =====
-        setTimeout(function() {
-            console.log('🔧 Initializing supervisor link enhancement system...');
-
-            // 找到所有导师链接
-            const supervisorLinks = document.querySelectorAll('.supervisor-link');
-            console.log('👨‍🏫 Found', supervisorLinks.length, 'supervisor links');
-
-            supervisorLinks.forEach(function(link, index) {
-                const href = link.getAttribute('href');
-                const text = link.textContent.trim();
-
-                console.log(`👨‍🏫 Supervisor link ${index + 1}:`, {
-                    href: href,
-                    text: text,
-                    target: link.getAttribute('target'),
-                    rel: link.getAttribute('rel'),
-                    class: link.className
-                });
-
-                // 强化CSS样式，确保可点击
-                link.style.cssText += `
-                    pointer-events: auto !important;
-                    cursor: pointer !important;
-                    z-index: 1000 !important;
-                    position: relative !important;
-                `;
-
-                // 移除任何可能阻止点击的事件监听器
-                const newLink = link.cloneNode(true);
-                link.parentNode.replaceChild(newLink, link);
-
-                // 添加专门的点击处理器
-                newLink.addEventListener('click', function(e) {
-                    console.log('👨‍🏫 Supervisor link clicked!', {
-                        href: this.href,
-                        text: this.textContent.trim(),
-                        event: e.type
-                    });
-
-                    // 确保链接正常工作，不阻止任何默认行为
-                    return true;
-                });
-
-                // 添加调试信息
-                newLink.addEventListener('mouseenter', function() {
-                    console.log('🖱️ Mouse entered supervisor link:', this.href);
-                });
-
-                newLink.addEventListener('focus', function() {
-                    console.log('🎯 Supervisor link focused:', this.href);
-                });
-
-                console.log(`✅ Supervisor link ${index + 1} enhanced successfully`);
-            });
-
-            // 全局导师链接点击监控
-            document.addEventListener('click', function(e) {
-                const target = e.target;
-                const supervisorLink = target.closest('.supervisor-link');
-
-                if (supervisorLink) {
-                    console.log('🎯 Supervisor link click detected!', {
-                        href: supervisorLink.href,
-                        text: supervisorLink.textContent.trim(),
-                        eventTarget: e.target.tagName,
-                        eventClass: e.target.className
-                    });
-
-                    // 不阻止任何行为，让链接自然工作
-                    // 只记录日志用于调试
-                }
-            }, true); // 使用捕获阶段确保能检测到点击
-
-            console.log('✅ Supervisor link enhancement system initialized');
-        }, 2000); // 延迟2秒确保所有其他脚本都已加载
-    </script>
+      </script>
 </body>
 </html>
