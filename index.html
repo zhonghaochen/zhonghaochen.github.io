@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  
+
     <!-- Structured Data - JSON-LD -->
     <script type="application/ld+json">
     {
@@ -45,17 +46,22 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Icons - Multiple CDN Fallbacks -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" id="fontawesome-primary">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" id="fontawesome-backup1" media="none" onload="if(media!='all')media='all'">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" id="fontawesome-backup2" media="none" onload="if(media!='all')media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+        id="fontawesome-primary">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"
+        id="fontawesome-backup1" media="none" onload="if(media!='all')media='all'">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+        id="fontawesome-backup2" media="none" onload="if(media!='all')media='all'">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/academic.css" rel="stylesheet">
     <link href="css/local-icons.css" rel="stylesheet">
     <link href="css/personal-photo.css" rel="stylesheet">
-    
+
     <!-- About Me卡片主题适配样式 -->
     <style>
         /* 白天模式：确保文字可见 */
@@ -63,48 +69,48 @@
         .about-card-text li {
             color: #2d3748 !important;
         }
-        
+
         /* 标题颜色 */
         .about-card-title {
             color: #0056b3 !important;
         }
-        
+
         /* 暗黑模式：所有文字统一为浅色 */
         [data-theme="dark"] .about-card-text,
         [data-theme="dark"] .about-card-text li {
             color: #e9ecef !important;
         }
-        
+
         /* 暗黑模式：标题颜色 */
         [data-theme="dark"] .about-card-title {
             color: #4dabf7 !important;
         }
-        
+
         /* 暗黑模式：调整卡片背景 */
         [data-theme="dark"] .about-card {
             background: rgba(45, 55, 72, 0.5) !important;
             border-color: rgba(77, 171, 247, 0.3) !important;
         }
-        
+
         /* 作者名字高亮样式 - 白天模式 */
         .publication-authors strong[style*="color: #0056b3"] {
             color: #0056b3 !important;
             font-weight: 700 !important;
         }
-        
+
         /* 作者名字高亮样式 - 暗黑模式 */
         [data-theme="dark"] .publication-authors strong[style*="color: #0056b3"] {
             color: #4dabf7 !important;
             font-weight: 700 !important;
         }
-        
+
         /* 期刊信息徽章 - 白天模式增强显示 */
         .publication-venue .badge.bg-success {
             background-color: #28a745 !important;
             color: white !important;
             box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
         }
-        
+
         /* 期刊信息徽章 - 暗黑模式 */
         [data-theme="dark"] .publication-venue .badge.bg-success {
             background-color: #51cf66 !important;
@@ -112,7 +118,7 @@
             box-shadow: 0 2px 4px rgba(81, 207, 102, 0.4);
             font-weight: 600 !important;
         }
-        
+
         /* 引用次数高亮显示 - 白天模式 */
         .citation-link-highlight {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%) !important;
@@ -124,23 +130,23 @@
             box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3) !important;
             transition: all 0.3s ease !important;
         }
-        
+
         .citation-link-highlight:hover {
             background: linear-gradient(135deg, #ff5252 0%, #f44336 100%) !important;
             box-shadow: 0 2px 6px rgba(255, 82, 82, 0.4) !important;
             transform: translateY(-1px) !important;
             color: white !important;
         }
-        
+
         .citation-link-highlight .citation-count {
             font-size: 0.95em !important;
             font-weight: 600 !important;
         }
-        
+
         .citation-link-highlight .citation-label {
             font-size: 0.85em !important;
         }
-        
+
         /* 引用次数高亮显示 - 暗黑模式 */
         [data-theme="dark"] .citation-link-highlight {
             background: linear-gradient(135deg, #ff8787 0%, #ff6b9d 100%) !important;
@@ -151,23 +157,23 @@
             padding: 0.25rem 0.5rem !important;
             box-shadow: 0 2px 4px rgba(255, 135, 135, 0.4) !important;
         }
-        
+
         [data-theme="dark"] .citation-link-highlight:hover {
             background: linear-gradient(135deg, #ffa8a8 0%, #ff8fab 100%) !important;
             box-shadow: 0 2px 6px rgba(255, 168, 168, 0.5) !important;
             transform: translateY(-1px) !important;
             color: #0d0d0d !important;
         }
-        
+
         [data-theme="dark"] .citation-link-highlight .citation-count {
             font-size: 0.95em !important;
             font-weight: 700 !important;
         }
-        
+
         [data-theme="dark"] .citation-link-highlight .citation-label {
             font-size: 0.85em !important;
         }
-        
+
         /* 导师链接样式 - 白天模式 - 强化版本 */
         .supervisor-link {
             color: #0056b3 !important;
@@ -250,7 +256,7 @@
             pointer-events: none !important;
         }
     </style>
-    
+
     <!-- 终极防抖动样式 - 必须放在所有CSS之后 -->
     <style>
         /* 彻底消除Publications按钮的抖动和动画 */
@@ -266,49 +272,49 @@
             min-height: 31px !important;
             min-width: 70px !important;
             width: auto !important;
-            
+
             /* 固定边框 */
             border: 2px solid var(--primary-color) !important;
             border-width: 2px !important;
             border-style: solid !important;
             border-color: var(--primary-color) !important;
             border-radius: 25px !important;
-            
+
             /* 固定颜色 - 所有状态完全相同 */
             background-color: transparent !important;
             color: var(--primary-color) !important;
             opacity: 1 !important;
-            
+
             /* 固定阴影 */
             box-shadow: none !important;
-            
+
             /* 固定布局 */
             display: inline-block !important;
             vertical-align: middle !important;
             text-align: center !important;
-            
+
             /* 完全禁用所有动画、过渡、变换 */
             transition: none !important;
             animation: none !important;
             transform: none !important;
             -webkit-transform: none !important;
-            
+
             /* 防止outline */
             outline: none !important;
             outline-offset: 0 !important;
-            
+
             /* 防止文本装饰 */
             text-decoration: none !important;
-            
+
             /* 防止字体渲染变化 */
             -webkit-font-smoothing: antialiased !important;
             -moz-osx-font-smoothing: grayscale !important;
-            
+
             /* 防止任何视觉效果 */
             filter: none !important;
             backdrop-filter: none !important;
         }
-        
+
         /* 确保图标不移动、不变化 */
         .publication-links a.btn i,
         .publication-links a.btn:hover i,
@@ -323,11 +329,11 @@
             animation: none !important;
             opacity: 1 !important;
         }
-        
+
         /* 强制覆盖Bootstrap的所有可能样式 */
         .publication-links .btn-outline-primary:not(:disabled):not(.disabled):active,
         .publication-links .btn-outline-primary:not(:disabled):not(.disabled).active,
-        .publication-links .show > .btn-outline-primary.dropdown-toggle {
+        .publication-links .show>.btn-outline-primary.dropdown-toggle {
             background-color: transparent !important;
             color: var(--primary-color) !important;
             border-color: var(--primary-color) !important;
@@ -335,12 +341,20 @@
             transform: none !important;
             opacity: 1 !important;
         }
-        
+
         /* 全局禁用所有按钮的过渡效果 */
-        .btn, .btn-sm, .btn-outline-primary,
-        .btn:hover, .btn:focus, .btn:active,
-        .btn-sm:hover, .btn-sm:focus, .btn-sm:active,
-        .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+        .btn,
+        .btn-sm,
+        .btn-outline-primary,
+        .btn:hover,
+        .btn:focus,
+        .btn:active,
+        .btn-sm:hover,
+        .btn-sm:focus,
+        .btn-sm:active,
+        .btn-outline-primary:hover,
+        .btn-outline-primary:focus,
+        .btn-outline-primary:active {
             -webkit-transition: none !important;
             -moz-transition: none !important;
             -o-transition: none !important;
@@ -356,14 +370,14 @@
             transform: none !important;
         }
     </style>
-    
+
     <!-- 禁用动画的JavaScript -->
     <script>
         // 在页面加载前禁用所有CSS动画和过渡
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // 为所有publication按钮添加事件监听器，阻止任何视觉变化，但排除导师链接
             const pubButtons = document.querySelectorAll('.publication-links a.btn:not(.supervisor-link):not([href*="jszy.hhu.edu.cn"])');
-            pubButtons.forEach(function(btn) {
+            pubButtons.forEach(function (btn) {
                 // 确保不是导师链接或任何外部链接
                 if (btn.classList.contains('supervisor-link') ||
                     btn.getAttribute('href') && btn.getAttribute('href').includes('jszy.hhu.edu.cn') ||
@@ -378,8 +392,8 @@
                 btn.style.transform = 'none';
 
                 // 添加事件监听器来防止任何状态变化
-                ['mouseenter', 'mouseleave', 'mousedown', 'mouseup', 'focus', 'blur'].forEach(function(eventType) {
-                    btn.addEventListener(eventType, function(e) {
+                ['mouseenter', 'mouseleave', 'mousedown', 'mouseup', 'focus', 'blur'].forEach(function (eventType) {
+                    btn.addEventListener(eventType, function (e) {
                         this.style.transition = 'none';
                         this.style.animation = 'none';
                         this.style.transform = 'none';
@@ -387,20 +401,20 @@
                     }, true);
                 });
             });
-            
+
             // Debug: 检查页面上的所有导航按钮
             console.log('🔍 Checking navigation buttons in Hero section:');
             const heroButtons = document.querySelectorAll('.hero-content a[href^="#"]');
             heroButtons.forEach((btn, index) => {
                 console.log(`  Button ${index + 1}:`, btn.getAttribute('href'), '-', btn.textContent.trim());
             });
-            
+
             // 移除了重复的备用平滑滚动代码，由 main.js 统一处理
             // 只确保外部链接（特别是导师链接）可以正常工作
-            setTimeout(function() {
+            setTimeout(function () {
                 const externalLinks = document.querySelectorAll('a[href^="http"], a[href*="jszy.hhu.edu.cn"], a[target="_blank"]');
                 console.log('🔗 Found', externalLinks.length, 'external links');
-                externalLinks.forEach(function(link) {
+                externalLinks.forEach(function (link) {
                     // 确保外部链接可点击
                     link.style.pointerEvents = 'auto';
                     link.style.cursor = 'pointer';
@@ -414,6 +428,7 @@
         });
     </script>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -467,10 +482,8 @@
                 <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
                     <div class="personal-photo-container text-center">
                         <div class="profile-photo-wrapper">
-                            <img src="images/profile-photo.png"
-                                 alt="Personal Photo"
-                                 class="profile-photo img-fluid"
-                                 loading="lazy">
+                            <img src="images/profile-photo.png" alt="Personal Photo" class="profile-photo img-fluid"
+                                loading="lazy">
                         </div>
                         <div class="profile-info mt-4">
                             <h3 class="profile-name" style="font-size: 1.4rem;">Yiyan Zhang</h3>
@@ -478,7 +491,7 @@
                             <div class="profile-university" style="font-size: 0.95rem;">
                                 <i class="fas fa-university me-2"></i>
                                 Hohai University
-        
+
                             </div>
                         </div>
                     </div>
@@ -487,76 +500,94 @@
                 <!-- Right Column: Hero Content -->
                 <div class="col-lg-8 col-md-7">
                     <div class="hero-content">
-                        <h1 class="fw-bold mb-3" style="font-size: 2rem;">Welcome to Yiyan Zhang's Academic Homepage</h1>
-                        <h2 class="text-primary mb-3" style="font-size: 1.15rem;">PhD Student | School of Information Science and Engineering</h2>
+                        <h1 class="fw-bold mb-3" style="font-size: 2rem;">Welcome to Yiyan Zhang's Academic Homepage
+                        </h1>
+                        <h2 class="text-primary mb-3" style="font-size: 1.15rem;">PhD Student | School of Information
+                            Science and Engineering</h2>
                         <h3 class="text-muted mb-4" style="font-size: 1.05rem;">Hohai University</h3>
-                        
+
                         <p class="mb-4" style="font-size: 1rem; line-height: 1.7;">
-                            I am a PhD student at the<a href="https://ise.hhu.edu.cn/" target="_blank" rel="noopener noreferrer" class="supervisor-link">College of Information Science and Engineering</a>, <a href="https://www.hhu.edu.cn/" target="_blank" rel="noopener noreferrer" class="supervisor-link">Hohai University</a>, supervised by 
-                            <a href="https://jszy.hhu.edu.cn/ghm/" target="_blank" rel="noopener noreferrer" class="supervisor-link">Prof. Hongmin Gao (高红民)</a> 
-                            and 
-                            <a href="https://jszy.hhu.edu.cn/lcm/" target="_blank" rel="noopener noreferrer" class="supervisor-link">Prof. Chenming Li (李臣明)</a>.
-                            My research focuses on developing advanced artificial intelligence methods for remote sensing image interpretation, 
-                            integrating deep learning techniques with remote sensing data analysis to develop intelligent systems for automated image interpretation.
+                            I am a PhD student at the<a href="https://ise.hhu.edu.cn/" target="_blank"
+                                rel="noopener noreferrer" class="supervisor-link">College of Information Science and
+                                Engineering</a>, <a href="https://www.hhu.edu.cn/" target="_blank"
+                                rel="noopener noreferrer" class="supervisor-link">Hohai University</a>, supervised by
+                            <a href="https://jszy.hhu.edu.cn/ghm/" target="_blank" rel="noopener noreferrer"
+                                class="supervisor-link">Prof. Hongmin Gao (高红民)</a>
+                            and
+                            <a href="https://jszy.hhu.edu.cn/lcm/" target="_blank" rel="noopener noreferrer"
+                                class="supervisor-link">Prof. Chenming Li (李臣明)</a>.
+                            My research focuses on developing advanced artificial intelligence methods for remote
+                            sensing image interpretation,
+                            integrating deep learning techniques with remote sensing data analysis to develop
+                            intelligent systems for automated image interpretation.
                         </p>
-                        
-                        <div class="d-flex gap-2 flex-wrap mb-4">
-                            <a href="#publications" class="btn btn-outline-primary btn-sm">
+
+                        <div class="d-flex gap-3 flex-wrap mb-4">
+                            <a href="#publications" class="btn btn-outline-primary btn-sm hero-nav-btn">
                                 <i class="fas fa-file-alt me-2"></i>Publications
                             </a>
-                            <a href="#services" class="btn btn-outline-primary btn-sm">
+                            <a href="#services" class="btn btn-outline-primary btn-sm hero-nav-btn">
                                 <i class="fas fa-user-check me-2"></i>Services
                             </a>
-                            <a href="#gallery" class="btn btn-outline-primary btn-sm">
+                            <a href="#gallery" class="btn btn-outline-primary btn-sm hero-nav-btn">
                                 <i class="fas fa-images me-2"></i>Gallery
                             </a>
-                            <a href="#contact" class="btn btn-outline-primary btn-sm">
+                            <a href="#contact" class="btn btn-outline-primary btn-sm hero-nav-btn">
                                 <i class="fas fa-envelope me-2"></i>Contact
                             </a>
                         </div>
-                        
+
                         <div class="social-links">
-                            <a href="https://github.com/zhangyiyan001?tab=repositories" class="social-link me-3" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <a href="https://github.com/zhangyiyan001?tab=repositories" class="social-link me-3"
+                                target="_blank" rel="noopener noreferrer" title="GitHub">
                                 <i class="fab fa-github fa-lg"></i>
                             </a>
-                            <a href="https://scholar.google.com/citations?user=ALuJTwMAAAAJ&hl=zh-CN" class="social-link me-3" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+                            <a href="https://scholar.google.com/citations?user=ALuJTwMAAAAJ&hl=zh-CN"
+                                class="social-link me-3" target="_blank" rel="noopener noreferrer"
+                                title="Google Scholar">
                                 <i class="fas fa-graduation-cap fa-lg"></i>
                             </a>
-                            <a href="https://www.researchgate.net/profile/Yiyan-Zhang-14/research" class="social-link" target="_blank" rel="noopener noreferrer" title="ResearchGate">
+                            <a href="https://www.researchgate.net/profile/Yiyan-Zhang-14/research" class="social-link"
+                                target="_blank" rel="noopener noreferrer" title="ResearchGate">
                                 <i class="fab fa-researchgate fa-lg"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- About Me Content - Integrated and Compact -->
             <div class="row mt-4" id="about">
                 <div class="col-12">
                     <hr class="my-4" style="opacity: 0.15;">
                     <h2 class="text-center mb-4" style="font-size: 1.6rem; font-weight: 600;">About Me</h2>
-                    
+
                     <div class="row g-4">
                         <!-- Research Focus -->
                         <div class="col-lg-4 col-md-6">
-                            <div class="about-card h-100 p-3 rounded" style="background: linear-gradient(135deg, rgba(0, 123, 255, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border: 1px solid rgba(0, 123, 255, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+                            <div class="about-card h-100 p-3 rounded"
+                                style="background: linear-gradient(135deg, rgba(0, 123, 255, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border: 1px solid rgba(0, 123, 255, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
                                 <h4 class="about-card-title mb-3" style="font-size: 1.05rem; font-weight: 600;">
                                     <i class="fas fa-microscope me-2"></i>Research Focus
                                 </h4>
-                                <p class="about-card-text" style="font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
-                                    My work focuses on improving the accuracy and efficiency of remote sensing applications through advanced
+                                <p class="about-card-text"
+                                    style="font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                                    My work focuses on improving the accuracy and efficiency of remote sensing
+                                    applications through advanced
                                     machine learning algorithms and computer vision techniques.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Research Interests -->
                         <div class="col-lg-4 col-md-6">
-                            <div class="about-card h-100 p-3 rounded" style="background: linear-gradient(135deg, rgba(0, 123, 255, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border: 1px solid rgba(0, 123, 255, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+                            <div class="about-card h-100 p-3 rounded"
+                                style="background: linear-gradient(135deg, rgba(0, 123, 255, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border: 1px solid rgba(0, 123, 255, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
                                 <h4 class="about-card-title mb-3" style="font-size: 1.05rem; font-weight: 600;">
                                     <i class="fas fa-star me-2"></i>Research Interests
                                 </h4>
-                                <ul class="about-card-text" style="font-size: 0.95rem; margin-bottom: 0; padding-left: 1.2rem; line-height: 1.6;">
+                                <ul class="about-card-text"
+                                    style="font-size: 0.95rem; margin-bottom: 0; padding-left: 1.2rem; line-height: 1.6;">
                                     <li>Artificial Intelligence & Deep Learning</li>
                                     <li>Remote Sensing Image Processing</li>
                                     <li>Computer Vision & Pattern Recognition</li>
@@ -564,14 +595,16 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <!-- Technical Expertise -->
                         <div class="col-lg-4 col-md-12">
-                            <div class="about-card h-100 p-3 rounded" style="background: linear-gradient(135deg, rgba(0, 123, 255, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border: 1px solid rgba(0, 123, 255, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+                            <div class="about-card h-100 p-3 rounded"
+                                style="background: linear-gradient(135deg, rgba(0, 123, 255, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border: 1px solid rgba(0, 123, 255, 0.15); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
                                 <h4 class="about-card-title mb-3" style="font-size: 1.05rem; font-weight: 600;">
                                     <i class="fas fa-tools me-2"></i>Technical Expertise
                                 </h4>
-                                <p class="about-card-text" style="font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                                <p class="about-card-text"
+                                    style="font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
                                     Deep Learning, CNNs, Transformer architectures, Selective State Space Model,
                                     Classification, Change Detection, Multi-scale Feature Fusion
                                 </p>
@@ -592,7 +625,7 @@
                 </div>
             </div>
 
-  
+
             <!-- Publications List -->
             <div class="row" id="publicationsList">
                 <!-- Publication items will be dynamically added here -->
@@ -606,8 +639,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="section-title text-center mb-4" style="font-size: 1.75rem;">Academic Services</h2>
-                    <p class="text-center mb-5" style="font-size: 1.05rem; color: var(--text-light); max-width: 800px; margin-left: auto; margin-right: auto;">
-                        I serve as a reviewer for several prestigious journals in the fields of image processing, remote sensing, and artificial intelligence.
+                    <p class="text-center mb-5"
+                        style="font-size: 1.05rem; color: var(--text-light); max-width: 800px; margin-left: auto; margin-right: auto;">
+                        I serve as a reviewer for several prestigious journals in the fields of image processing, remote
+                        sensing, and artificial intelligence.
                     </p>
                 </div>
             </div>
@@ -615,123 +650,152 @@
             <!-- Journal Reviewer Section -->
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <div class="service-card p-4 mb-4" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); border-left: 4px solid #0056b3;">
+                    <div class="service-card p-4 mb-4"
+                        style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); border-left: 4px solid #0056b3;">
                         <h3 class="mb-4" style="font-size: 1.3rem; color: #0056b3; font-weight: 600;">
                             <i class="fas fa-book-reader me-2"></i>Journal Reviewer
                         </h3>
-                        
+
                         <div class="row g-3">
                             <!-- IEEE Journals -->
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Image Processing</span>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
-                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Geoscience and Remote Sensing</span>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
-                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Neural Networks and Learning Systems</span>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
-                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Cybernetics</span>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Image
+                                        Processing</span>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Circuits and Systems for Video Technology</span>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Geoscience and
+                                        Remote Sensing</span>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Neural Networks
+                                        and Learning Systems</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on
+                                        Cybernetics</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                    <i class="fas fa-certificate" style="color: #0056b3;"></i>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Circuits and
+                                        Systems for Video Technology</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
                                     <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Big Data</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Emerging Topics in Computational Intelligence</span>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Transactions on Emerging Topics
+                                        in Computational Intelligence</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">IEEE Geoscience and Remote Sensing Letters</span>
+                                    <span style="font-weight: 500; color: #2d3748;">IEEE Geoscience and Remote Sensing
+                                        Letters</span>
                                 </div>
                             </div>
-                            
+
                             <!-- Other Journals -->
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
                                     <span style="font-weight: 500; color: #2d3748;">Information Fusion</span>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">ISPRS Journal of Photogrammetry and Remote Sensing</span>
+                                    <span style="font-weight: 500; color: #2d3748;">ISPRS Journal of Photogrammetry and
+                                        Remote Sensing</span>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
                                     <span style="font-weight: 500; color: #2d3748;">Knowledge-Based Systems</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">Expert Systems With Applications</span>
+                                    <span style="font-weight: 500; color: #2d3748;">Expert Systems With
+                                        Applications</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">Engineering Applications of Artificial Intelligence</span>
+                                    <span style="font-weight: 500; color: #2d3748;">Engineering Applications of
+                                        Artificial Intelligence</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
                                     <span style="font-weight: 500; color: #2d3748;">Neural Networks</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">Computers and Electronics in Agriculture</span>
+                                    <span style="font-weight: 500; color: #2d3748;">Computers and Electronics in
+                                        Agriculture</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="journal-item" style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
+                                <div class="journal-item"
+                                    style="background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(102, 126, 234, 0.05) 100%); border-radius: 10px; border: 1px solid rgba(0, 86, 179, 0.1);">
                                     <i class="fas fa-certificate" style="color: #0056b3;"></i>
-                                    <span style="font-weight: 500; color: #2d3748;">International Journal of Computational Intelligence and Applications</span>
+                                    <span style="font-weight: 500; color: #2d3748;">International Journal of
+                                        Computational Intelligence and Applications</span>
                                 </div>
                             </div>
                         </div>
@@ -780,15 +844,20 @@
                             <div class="contact-social">
                                 <h4 class="mb-3" style="font-size: 1.1rem;">Find Me On</h4>
                                 <div class="social-links-large">
-                                    <a href="https://scholar.google.com/citations?user=ALuJTwMAAAAJ&hl=zh-CN" class="social-link-large me-4" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+                                    <a href="https://scholar.google.com/citations?user=ALuJTwMAAAAJ&hl=zh-CN"
+                                        class="social-link-large me-4" target="_blank" rel="noopener noreferrer"
+                                        title="Google Scholar">
                                         <i class="fas fa-graduation-cap fa-2x"></i>
                                         <span class="d-block mt-2" style="font-size: 0.9rem;">Google Scholar</span>
                                     </a>
-                                    <a href="https://www.researchgate.net/profile/Yiyan-Zhang-14?ev=hdr_xprf" class="social-link-large me-4" target="_blank" rel="noopener noreferrer" title="ResearchGate">
+                                    <a href="https://www.researchgate.net/profile/Yiyan-Zhang-14?ev=hdr_xprf"
+                                        class="social-link-large me-4" target="_blank" rel="noopener noreferrer"
+                                        title="ResearchGate">
                                         <i class="fab fa-researchgate fa-2x"></i>
                                         <span class="d-block mt-2" style="font-size: 0.9rem;">ResearchGate</span>
                                     </a>
-                                    <a href="javascript:void(0);" class="social-link-large" onclick="showWeChatQR(); return false;" title="WeChat">
+                                    <a href="javascript:void(0);" class="social-link-large"
+                                        onclick="showWeChatQR(); return false;" title="WeChat">
                                         <i class="fab fa-weixin fa-2x"></i>
                                         <span class="d-block mt-2" style="font-size: 0.9rem;">WeChat</span>
                                     </a>
@@ -847,7 +916,7 @@
 
             const computedStyle = window.getComputedStyle(testElement);
             const isLoaded = computedStyle.fontFamily.includes('Font Awesome') ||
-                             computedStyle.fontFamily.includes('FontAwesome');
+                computedStyle.fontFamily.includes('FontAwesome');
 
             document.body.removeChild(testElement);
 
@@ -877,10 +946,11 @@
         }
 
         // Initialize on DOM ready
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             setTimeout(initializeIconFallbacks, 500);
         });
 
-      </script>
+    </script>
 </body>
+
 </html>
