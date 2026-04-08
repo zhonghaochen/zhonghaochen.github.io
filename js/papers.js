@@ -428,6 +428,27 @@ const papersData = [
     },
     {
         id: 21,
+        title: "A multidepth and multibranch network for hyperspectral target detection based on band selection",
+        authors: "Hongmin Gao, Yitong Zhang, Zhonghao Chen, Shufang Xu, Danfeng Hong, Bing Zhang",
+        venue: "IEEE Transactions on Geoscience and Remote Sensing",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
+        journalInfo: "(SCI, Q1, IF:8.6)",
+        year: 2023,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10073570/',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Band selection (BS)", "data augmentation (DA)", "deep learning (DL)", "hyperspectral imagery (HSI)", "hyperspectral target detection (HTD)"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/DLBSTD.png",
+        modelImageAlt: 'DLBSTD',
+        // Citation data
+        citations: 50,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 22,
         title: "Adaptively dictionary construction for hyperspectral target detection",
         authors: "Chenming Li, Weibo Zhang, Yiyan Zhang, Zhonghao Chen, Hongmin Gao",
         venue: "IEEE Geoscience and Remote Sensing Letters",
@@ -448,7 +469,7 @@ const papersData = [
         googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
     },
     {
-        id: 22,
+        id: 23,
         title: "Global to local: A hierarchical detection algorithm for hyperspectral image target detection",
         authors: "Zhonghao Chen, Zhengtao Lu, Hongmin Gao, Yiyan Zhang, Jia Zhao, Danfeng Hong, Bing Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
