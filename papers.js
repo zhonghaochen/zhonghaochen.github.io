@@ -4,26 +4,25 @@
 const papersData = [
     {
         id: 1,
-        title: "Multimodal Transformer Network for Hyperspectral and LiDAR Classification",
-        authors: "Yiyan Zhang, Shufang Xu, Danfeng Hong, Hongmin Gao, Chenkai Zhang, Meiqiao Bi, Chenming Li",
+        title: "Global to local: A hierarchical detection algorithm for hyperspectral image target detection",
+        authors: "Zhonghao Chen, Zhengtao Lu, Hongmin Gao, Yiyan Zhang, Jia Zhao, Danfeng Hong, Bing Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
-        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
-        journalInfo: "(SCI, Q1, IF:8.6)",
+        venueUrl: "https://ieeexplore.ieee.org/abstract/document/9968036",
+        journalInfo: "(SCI, Q1, IF:8.2)",
         esiHighlyCited: true,
-        year: 2023,
+        year: 2022,
         type: "journal",
-        doi: null,
-        pdf: "https://ieeexplore.ieee.org/document/10145469",
-        code: "https://github.com/zhangyiyan001/MTNet",
-        keywords: ["Feature extraction", "Transformers", "Hyperspectral and LiDAR Classification"],
+        doi: "10.1109/TGRS.2022.3224536",
+        pdf: "https://ieeexplore.ieee.org/abstract/document/9968036",
+        code: "https://github.com/zhonghaochen/G2LHTD_Master",
+        keywords:["Target detection", "Hierarchical detection", "Global to local", "Hyperspectral image", "Remote sensing"],
         // Model image fields
         hasModelImage: true,
-        modelImage: "images/models/multimodal-transformer-architecture.png",
-        modelImageAlt: "Multimodal Transformer Network Architecture",
+        modelImage: "images/models/g2lhtd.png",
+        modelImageAlt: "G2LHTD network architecture",
         // Citation data
-        citations: 103,  // 手动更新的引用次数
-        googleScholarId: "citation_id_here",  // Google Scholar 文章ID（可选）
-       
+        citations: 82, 
+        googleScholarId: "8TqiDYMAAAAJ"  
     },
     {
         id: 2,
