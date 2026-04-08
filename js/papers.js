@@ -4,24 +4,24 @@
 const papersData = [
     {
         id: 1,
-        title: "Multimodal Transformer Network for Hyperspectral and LiDAR Classification",
-        authors: "Yiyan Zhang, Shufang Xu, Danfeng Hong, Hongmin Gao, Chenkai Zhang, Meiqiao Bi, Chenming Li",
-        venue: "IEEE Transactions on Geoscience and Remote Sensing",
-        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
-        journalInfo: "(SCI, Q1, IF:8.6)",
+        title: "Spectral-guided multiscale double helix mamba for hyperspectral image classification",
+        authors: "Shufang Xu, Ruizhe Liu, Zhonghao Chen, Bo Jia, Hongmin Gao",
+        venue: "Optics & Laser Technology",
+        venueUrl: "https://www.sciencedirect.com/journal/optics-and-laser-technology",
+        journalInfo: "(SCI, Q1, IF:5.0)",
         esiHighlyCited: true,
-        year: 2023,
+        year: 2026,
         type: "journal",
         doi: null,
-        pdf: "https://ieeexplore.ieee.org/document/10145469",
+        pdf: "https://www.sciencedirect.com/science/article/pii/S0030399225021243",
         code: "https://github.com/zhangyiyan001/MTNet",
-        keywords: ["Feature extraction", "Transformers", "Hyperspectral and LiDAR Classification"],
+        keywords: ["Hyperspectral image classification; Mamba; Dual branch architecture; Spectral-guided"],
         // Model image fields
         hasModelImage: true,
-        modelImage: "images/models/multimodal-transformer-architecture.png",
-        modelImageAlt: "Multimodal Transformer Network Architecture",
+        modelImage: "images/models/Spectral-guided multiscale double helix mamba.jpg",
+        modelImageAlt: "Spectral-guided multiscale double helix mamba",
         // Citation data
-        citations: 103,  // 手动更新的引用次数
+        citations: 1,  // 手动更新的引用次数
         googleScholarId: "citation_id_here",  // Google Scholar 文章ID（可选）
        
     },
