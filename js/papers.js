@@ -154,45 +154,87 @@ const papersData = [
         googleScholarId: "citation_id_here"
     },
     {
-        id: 7,
-        title: "AMSSE-Net: Adaptive multiscale spatial-spectral enhancement network for classification of hyperspectral and LiDAR data",
-        authors: "Hongmin Gao, Hao Feng, Yiyan Zhang, Shufang Xu, Bing Zhang",
-        venue: "IEEE Transactions on Geoscience and Remote Sensing",
-        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
-        journalInfo: "(SCI, Q1, IF:8.6)",
-        year: 2023,
-        type: "journal",
+        id: 8,
+        title: "Dualmamba: Joint Classification of Hyperspectral and Lidar Data Using State Space Models",
+        authors: "Yiyan Zhang, Hongmin Gao, Zhonghao Chen, Shuyu Fei, Shufang Xu, Jun Zhou",
+        venue: "IGARSS 2025-2025 IEEE International Geoscience and Remote Sensing Symposium",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/conhome/11242230/proceeding",
+        journalInfo: null,
+        year: 2025,
+        type: "Symposium",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/document/10313328',  // 如果有 PDF 链接，请在此更新
-        code: 'https://github.com/haofeng0003/AMSSE-Net',  // 如果有代码仓库，请在此更新
-        keywords: ["Multiscale feature extraction", "Spatial-spectral enhancement", "Feature fusion"],
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/11314057',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["State Space Models", "Hyperspectral and LiDAR Image Classification", "Mamba"],
         // Model image fields
         hasModelImage: true,
-        modelImage: "images/models/amsse-net.png",
-        modelImageAlt: "AMSSE-Net Network Architecture",
+        modelImage: "images/models/Dualmamba.png",
+        modelImageAlt: "Dualmamba",
         // Citation data
-        citations: 55,  // 请从 Google Scholar 获取实际引用次数
+        citations: 0,  // 请从 Google Scholar 获取实际引用次数
         googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
     },
     {
-        id: 8,
-        title: "Interactive enhanced network based on multihead self-attention and graph convolution for classification of hyperspectral and LiDAR data",
-        authors: "Hongmin Gao, Hao Feng, Yiyan Zhang, Shuyu Fei, Runhua Shen, Shufang Xu, Bing Zhang",
+        id: 9,
+        title: "Interactive Siamese spatial-Spectral cross-layer fusion transformer for hyperspectral image change detection",
+        authors: "Chenming Li, Xingyu Feng, Yiyan Zhang, Hongmin Gao, Zhonghao Chen, Shufang Xu",
+        venue: "International Journal of Remote Sensing",
+        venueUrl: "https://www.tandfonline.com/journals/tres20",
+        journalInfo: "(SCI, Q1, IF:2.6)",
+        year: 2024,
+        type: "journal",
+        doi: null,
+        pdf: 'https://www.tandfonline.com/doi/abs/10.1080/01431161.2024.2379516',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Hyper Spectral Image (HSI)", "Change Detection (CD)", "transformer",  "siamese network",  "cross-layer Adaptive Fuse (CAF)"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/Interactive Siamese spatial-Spectral cross-layer fusion transformer.png",
+        modelImageAlt: 'Interactive Siamese spatial-Spectral cross-layer fusion transformer',
+        // Citation data
+        citations: 2,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 10,
+        title: "Tl2gh²t: Triple-path local-to-global network with hybrid head transformer for hyperspectral change detection",
+        authors: "Zhonghao Chen, Yuyang Wang, Swalpa Kumar Roy, Hongmin Gao, Yao Ding, Xiongwu Xiao, Zhenfeng Shao, Bing Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
         venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
         journalInfo: "(SCI, Q1, IF:8.6)",
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/document/10693614',  // 如果有 PDF 链接，请在此更新
-        code: 'https://github.com/haofeng0003/MSA-GCN',  // 如果有代码仓库，请在此更新
-        keywords: ["Multihead self-attention", "Graph convolution", "Interactive learning"],
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10639462',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Change detection (CD)", "hybrid head transformer (HybridHT)", "hyperspectral (HS) image", "transformer"],
         // Model image fields
         hasModelImage: true,
-        modelImage: "images/models/msa-gcn.png",
-        modelImageAlt: 'msa-gcn network architecture',
+        modelImage: "images/models/hybrid head transformer.png",
+        modelImageAlt: 'hybrid head transformer',
         // Citation data
-        citations: 13,  // 请从 Google Scholar 获取实际引用次数
+        citations: 26,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 11,
+        title: "Airborne small target detection method based on multimodal and adaptive feature fusion",
+        authors: "Shufang Xu, Xu Chen, Haiwei Li, Tianci Liu, Zhonghao Chen, Hongmin Gao, Yiyan Zhang",
+        venue: "IEEE Transactions on Geoscience and Remote Sensing",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
+        journalInfo: "(SCI, Q1, IF:8.6)",
+        year: 2024,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10637455',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Attention mechanism", "feature fusion", "multimodal", "small target detection", "unmanned aerial vehicle (UAV) aerial imagery"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/Airborne small target detection method.png",
+        modelImageAlt: 'Airborne small target detection method',
+        // Citation data
+        citations: 36,  // 请从 Google Scholar 获取实际引用次数
         googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
     },
     {
