@@ -111,7 +111,7 @@ const translations = {
         },
         // Hero Section
         hero: {
-            welcome: "欢迎来到张亦严的学术主页",
+            welcome: "欢迎来到陈忠昊的学术主页",
             title: "博士研究生 | 信息科学与工程学院",
             university: "河海大学",
             intro1: "我是",
@@ -140,7 +140,7 @@ const translations = {
                 gis: "地理信息系统"
             },
             technicalExpertise: "技术特长",
-            technicalText: "深度学习、卷积神经网络、Transformer架构、选择性状态空间模型、分类、变化检测、多尺度特征融合"
+            technicalText: "深度学习、卷积神经网络、Transformer架构、分类、目标检测、变化检测、多尺度特征融合"
         },
         // Publications Section
         publications: {
@@ -193,7 +193,7 @@ const translations = {
         },
         // Footer
         footer: {
-            welcome: "欢迎访问张依严的主页"
+            welcome: "欢迎访问陈忠昊的主页"
         },
         // Back to Top
         backToTop: "返回顶部"
