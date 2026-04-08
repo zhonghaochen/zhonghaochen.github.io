@@ -97,7 +97,7 @@ const papersData = [
         venue: "Information Fusion",
         venueUrl: "https://www.sciencedirect.com/journal/information-fusion",
         journalInfo: "(SCI, Q1, IF:15.5)",
-        year: 2026,
+        year: 2025,
         type: "journal",
         doi: null,
         pdf: "https://www.sciencedirect.com/science/article/pii/S1566253525005615",
@@ -113,7 +113,7 @@ const papersData = [
     },
     {
         id: 6,
-        title: "SIT: Scale-interaction transformer for hyperspectral image classification",
+        title: "SiT: Scale-interaction transformer for hyperspectral image classification",
         authors: "Zhonghao Chen, Swalpa Kumar Roy, Hongmin Gao, Yao Ding, Bing Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
         venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
@@ -139,7 +139,7 @@ const papersData = [
         venue: "Information Fusion",
         venueUrl: "https://www.sciencedirect.com/journal/information-fusion",
         journalInfo: "(SCI, Q1, IF:15.5)",
-        year: 2026,
+        year: 2025,
         type: "journal",
         doi: null,
         pdf: "https://www.sciencedirect.com/science/article/pii/S1566253525007213",
@@ -176,11 +176,32 @@ const papersData = [
     },
     {
         id: 9,
+        title: "MDA-HTD: Mask-driven dual autoencoders meet hyperspectral target detection",
+        authors: "Zhonghao Chen, Hongmin Gao, Zhengtao Lu, Yiyan Zhang, Yao Ding, Xin Li, Bing Zhang",
+        venue: "Information Processing & Management",
+        venueUrl: "https://www.sciencedirect.com/journal/information-processing-and-management",
+        journalInfo: "(SCI, Q1, IF:15.5)",
+        year: 2025,
+        type: "journal",
+        doi: null,
+        pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0306457325000482",
+        code: null,
+        keywords: ["Hyperspectral (HS) image", "Target detection", "Mask-driven", "Dual autoencoders"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/MDA-HTD.jpg",
+        modelImageAlt: "MDA-HTD",
+        // Citation data
+        citations: 0,
+        googleScholarId: "citation_id_here"
+    },
+    {
+        id: 10,
         title: "Interactive Siamese spatial-Spectral cross-layer fusion transformer for hyperspectral image change detection",
         authors: "Chenming Li, Xingyu Feng, Yiyan Zhang, Hongmin Gao, Zhonghao Chen, Shufang Xu",
         venue: "International Journal of Remote Sensing",
         venueUrl: "https://www.tandfonline.com/journals/tres20",
-        journalInfo: "(SCI, Q1, IF:2.6)",
+        journalInfo: "(SCI, Q3, IF:2.6)",
         year: 2024,
         type: "journal",
         doi: null,
@@ -196,7 +217,7 @@ const papersData = [
         googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
     },
     {
-        id: 10,
+        id: 11,
         title: "Tl2gh²t: Triple-path local-to-global network with hybrid head transformer for hyperspectral change detection",
         authors: "Zhonghao Chen, Yuyang Wang, Swalpa Kumar Roy, Hongmin Gao, Yao Ding, Xiongwu Xiao, Zhenfeng Shao, Bing Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
@@ -217,7 +238,7 @@ const papersData = [
         googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
     },
     {
-        id: 11,
+        id: 12,
         title: "Airborne small target detection method based on multimodal and adaptive feature fusion",
         authors: "Shufang Xu, Xu Chen, Haiwei Li, Tianci Liu, Zhonghao Chen, Hongmin Gao, Yiyan Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
@@ -238,7 +259,196 @@ const papersData = [
         googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
     },
     {
-        id: 9,
+        id: 13,
+        title: "Transformer-inspired stacked-GAN for hyperspectral target detection",
+        authors: "Chenming Li, Runzhou Wang, Zhonghao Chen, Hongmin Gao, Shufang Xu",
+        venue: "International Journal of Remote Sensing",
+        venueUrl: "https://www.tandfonline.com/journals/tres20",
+        journalInfo: "(SCI, Q3, IF:2.6)",
+        year: 2024,
+        type: "journal",
+        doi: null,
+        pdf: 'https://www.tandfonline.com/doi/full/10.1080/01431161.2024.2370500',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Generative Adversarial Network (GAN)", "Autoencoder (AE)", "transformer", "Hyperspectral image (HSI)", "target detection"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/Transformer-inspired stacked-GAN.png",
+        modelImageAlt: 'Transformer-inspired stacked-GAN',
+        // Citation data
+        citations: 5,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 14,
+        title: "基于多尺度近端特征拼接网络的高光谱图像分类方法",
+        authors: "高红民， 曹雪莹， 陈忠昊， 花再军， 李臣明， 陈月",
+        venue: "通信学报",
+        venueUrl: "http://www.joconline.com.cn/",
+        journalInfo: "(EI)",
+        year: 2024,
+        type: "journal",
+        doi: null,
+        pdf: 'https://https://www.joconline.com.cn/zh/article/doi/10.11959/j.issn.1000-436x.2021024/',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["卷积神经网络", "高光谱图像分类", "特征拼接", "多尺度滤波器", "空洞卷积"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/MPFCN.png",
+        modelImageAlt: 'MPFCN',
+        // Citation data
+        citations: 3,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 15,
+        title: "Cognitive fusion of graph neural network and convolutional neural network for enhanced hyperspectral target detection",
+        authors: "Shufang Xu, Sijie Geng, Pengfei Xu, Zhonghao Chen, Hongmin Gao",
+        venue: "IEEE Transactions on Geoscience and Remote Sensing",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
+        journalInfo: "(SCI, Q1, IF:8.6)",
+        year: 2024,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10506566',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Attention mechanism", "deep learning (DL)", "graph neural network (GNN)", "hyperspectral target detection (HTD)", "sparse subspace clustering (SSC)"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/Cognitive fusion of graph neural network.png",
+        modelImageAlt: 'Cognitive fusion of graph neural network',
+        // Citation data
+        citations: 24,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 16,
+        title: "Multiscale random-shape convolution and adaptive graph convolution fusion network for hyperspectral image classification",
+        authors: "Hongmin Gao, Runhua Sheng, Zhonghao Chen, Haiyun Liu, Shufang Xu, Bing Zhang",
+        venue: "IEEE Transactions on Geoscience and Remote Sensing",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
+        journalInfo: "(SCI, Q1, IF:8.6)",
+        year: 2024,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10504929',  // 如果有 PDF 链接，请在此更新
+        code: "https://github.com/shengrunhua/MRCAGCFN",  // 如果有代码仓库，请在此更新
+        keywords: ["Feature extraction", "Convolution", "Shape", "Kernel", "Hyperspectral imaging", "Data mining", "Convolutional neural networks"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/MRCAGCFN.png",
+        modelImageAlt: 'MRCAGCFN',
+        // Citation data
+        citations: 27,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 17,
+        title: "Local aggregation and global attention network for hyperspectral image classification with spectral-induced aligned superpixel segmentation",
+        authors: "Zhonghao Chen, Guoyong Wu, Hongmin Gao, Yao Ding, Danfeng Hong, Bing Zhang",
+        venue: "Expert Systems with Applications",
+        venueUrl: "https://www.sciencedirect.com/journal/expert-systems-with-applications",
+        journalInfo: "(SCI, Q1, IF:7.5)",
+        year: 2023,
+        type: "journal",
+        doi: null,
+        pdf: "https://www.sciencedirect.com/science/article/pii/S0957417423013301",
+        code: null,
+        keywords: ["Hyperspectral (HS) image", "Graph neural networks", "Classification", "Superpixel segmentation", "Transformer"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/LAGAN.jpg",
+        modelImageAlt: "LAGAN",
+        // Citation data
+        citations: 87,
+        googleScholarId: "citation_id_here"
+    },
+    {
+        id: 18,
+        title: "Temporal difference-guided network for hyperspectral image change detection",
+        authors: "Zhonghao Chen, Yuyang Wang, Hongmin Gao, Yao Ding, Qiqiang Zhong, Danfeng Hong, Bing Zhang",
+        venue: "International Journal of Remote Sensing",
+        venueUrl: "https://www.tandfonline.com/journals/tres20",
+        journalInfo: "(SCI, Q3, IF:2.6)",
+        year: 2023,
+        type: "journal",
+        doi: null,
+        pdf: 'https://www.tandfonline.com/doi/abs/10.1080/01431161.2023.2258563',  // 如果有 PDF 链接，请在此更新
+        code: "https://github.com/zhonghaochen/TDGN_Master",  // 如果有代码仓库，请在此更新
+        keywords: ["Hyperspectral (HS) image", "change detection (CD)", "convolutional neural networks (CNNs)",  "convolutional gated recurrent unit", "temporal difference-guided"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/TDGN.jpg",
+        modelImageAlt: 'TDGN',
+        // Citation data
+        citations: 49,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 19,
+        title: "Grid network: Feature extraction in anisotropic perspective for hyperspectral image classification",
+        authors: "Zhonghao Chen, Danfeng Hong, Hongmin Gao",
+        venue: "IEEE Geoscience and Remote Sensing Letters",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859",
+        journalInfo: "(SCI, Q1, IF:4.4)",
+        year: 2023,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10189830',  // 如果有 PDF 链接，请在此更新
+        code: "https://github.com/zhonghaochen/GNet_Master",  // 如果有代码仓库，请在此更新
+        keywords: ["Anisotropic", "feature fusion", "hyperspectral (HS) images", "semantic gap", "spectral-spatial feature"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/GNet.png",
+        modelImageAlt: 'GNet',
+        // Citation data
+        citations: 64,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 20,
+        title: "Hyperspectral target detection via spectral aggregation and separation network with target band random mask",
+        authors: "Hongmin Gao, Yitong Zhang, Zhonghao Chen, Feng Xu, Danfeng Hong, Bing Zhang",
+        venue: "IEEE Transactions on Geoscience and Remote Sensing",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
+        journalInfo: "(SCI, Q1, IF:8.6)",
+        year: 2023,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10161584/',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Data augmentation (DA)", "deep learning (DL)", "hyperspectral imagery (HSI)", "hyperspectral target detection (HTD)"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/SASN.png",
+        modelImageAlt: 'SASN',
+        // Citation data
+        citations: 34,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 21,
+        title: "Adaptively dictionary construction for hyperspectral target detection",
+        authors: "Chenming Li, Weibo Zhang, Yiyan Zhang, Zhonghao Chen, Hongmin Gao",
+        venue: "IEEE Geoscience and Remote Sensing Letters",
+        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859",
+        journalInfo: "(SCI, Q1, IF:4.4)",
+        year: 2023,
+        type: "journal",
+        doi: null,
+        pdf: 'https://ieeexplore.ieee.org/abstract/document/10050134',  // 如果有 PDF 链接，请在此更新
+        code: null,  // 如果有代码仓库，请在此更新
+        keywords: ["Adaptively dictionary construction (ADC)", "hyperspectral imagery", "target detection"],
+        // Model image fields
+        hasModelImage: true,
+        modelImage: "images/models/ADCTD.png",
+        modelImageAlt: 'ADCTD',
+        // Citation data
+        citations: 16,  // 请从 Google Scholar 获取实际引用次数
+        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
+    },
+    {
+        id: 22,
         title: "Global to local: A hierarchical detection algorithm for hyperspectral image target detection",
         authors: "Zhonghao Chen, Zhengtao Lu, Hongmin Gao, Yiyan Zhang, Jia Zhao, Danfeng Hong, Bing Zhang",
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
@@ -256,7 +466,7 @@ const papersData = [
         modelImage: "images/models/g2lhtd.png",
         modelImageAlt: "G2LHTD network architecture",
         // Citation data
-        citations: 82,
+        citations: 89,
         googleScholarId: "citation_id_here"
     },
     {
