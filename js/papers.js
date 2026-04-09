@@ -22,8 +22,7 @@ const papersData = [
         modelImageAlt: "Spectral-guided multiscale double helix mamba",
         // Citation data
         citations: 1,  // 手动更新的引用次数
-        googleScholarId: "citation_id_here",  // Google Scholar 文章ID（可选）
-       
+        googleScholarId: "citation_id_here"  // Google Scholar 文章ID（可选）
     },
     {
         id: 2,
