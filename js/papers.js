@@ -179,7 +179,8 @@ const papersData = [
         authors: "Zhonghao Chen, Hongmin Gao, Zhengtao Lu, Yiyan Zhang, Yao Ding, Xin Li, Bing Zhang",
         venue: "Information Processing & Management",
         venueUrl: "https://www.sciencedirect.com/journal/information-processing-and-management",
-        journalInfo: "(SCI, Q1, IF:15.5)",
+        journalInfo: "(SCI, Q1, IF:7.4)",
+		esiHighlyCited: true,
         year: 2025,
         type: "journal",
         doi: null,
@@ -348,6 +349,7 @@ const papersData = [
         venue: "Expert Systems with Applications",
         venueUrl: "https://www.sciencedirect.com/journal/expert-systems-with-applications",
         journalInfo: "(SCI, Q1, IF:7.5)",
+		esiHighlyCited: true,
         year: 2023,
         type: "journal",
         doi: null,
@@ -390,6 +392,7 @@ const papersData = [
         venue: "IEEE Geoscience and Remote Sensing Letters",
         venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859",
         journalInfo: "(SCI, Q1, IF:4.4)",
+		esiHighlyCited: true,
         year: 2023,
         type: "journal",
         doi: null,
@@ -432,6 +435,7 @@ const papersData = [
         venue: "IEEE Transactions on Geoscience and Remote Sensing",
         venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
         journalInfo: "(SCI, Q1, IF:8.6)",
+		esiHighlyCited: true,
         year: 2023,
         type: "journal",
         doi: null,
@@ -765,21 +769,21 @@ function extractImpactFactor(journalInfo) {
 
 // ===== Helper function to check if Yiyan Zhang is first author =====
 function isYiyanZhangFirstAuthor(authors) {
-    // Check if the authors string starts with "Yiyan Zhang"
-    return authors.trim().startsWith('Yiyan Zhang');
+    // Check if the authors string starts with "Zhonghao Chen"
+    return authors.trim().startsWith('Zhonghao Chen');
 }
 
 // ===== Sort papers function =====
 function sortPapers(papers) {
     return papers.sort((a, b) => {
-        const aIsFirstAuthor = isYiyanZhangFirstAuthor(a.authors);
-        const bIsFirstAuthor = isYiyanZhangFirstAuthor(b.authors);
+        const aIsFirstAuthor = isZhonghaoChenFirstAuthor(a.authors);
+        const bIsFirstAuthor = isZhonghaoChenFirstAuthor(b.authors);
         
-        // Priority 1: Yiyan Zhang first author papers come first
+        // Priority 1: Zhonghao Chen first author papers come first
         if (aIsFirstAuthor && !bIsFirstAuthor) return -1;
         if (!aIsFirstAuthor && bIsFirstAuthor) return 1;
         
-        // For Yiyan Zhang first author papers
+        // For Zhonghao Chen first author papers
         if (aIsFirstAuthor && bIsFirstAuthor) {
             // Sort by citations (descending)
             if (b.citations !== a.citations) {
@@ -843,7 +847,7 @@ function renderPapers(papers) {
 // ===== Helper function to highlight specific author =====
 function highlightAuthor(authors) {
     // Highlight "Yiyan Zhang" with bold font
-    return authors.replace(/Yiyan Zhang/g, '<strong style="font-weight: 700; color: #0056b3;">Yiyan Zhang</strong>');
+    return authors.replace(/Zhonghao Chen/g, '<strong style="font-weight: 700; color: #0056b3;">Zhonghao Chen</strong>');
 }
 
 // ===== Create publication card with model image =====
