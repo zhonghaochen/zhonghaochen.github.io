@@ -766,7 +766,7 @@ function extractImpactFactor(journalInfo) {
     return match ? parseFloat(match[1]) : 0;
 }
 
-// ===== Helper function to check if Yiyan Zhang is first author =====
+// ===== Helper function to check if Zhonghao Chen is first author =====
 function isZhonghaoChenFirstAuthor(authors) {
     // Check if the authors string starts with "Zhonghao Chen"
     return authors.trim().startsWith('Zhonghao Chen');
@@ -845,7 +845,7 @@ function renderPapers(papers) {
 
 // ===== Helper function to highlight specific author =====
 function highlightAuthor(authors) {
-    // Highlight "Yiyan Zhang" with bold font
+    // Highlight "Zhonghao Chen" with bold font
     return authors.replace(/Zhonghao Chen/g, '<strong style="font-weight: 700; color: #0056b3;">Zhonghao Chen</strong>');
 }
 
