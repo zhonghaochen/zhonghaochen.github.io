@@ -755,7 +755,7 @@ function showWeChatQR() {
         <div class="wechat-modal-body">
             <div class="qr-code-wrapper">
                 <div class="qr-code-container">
-                    <img src="images/CZH-WeChat.jpg"
+                    <img src="images/CZH_WeChat.jpg"
                          alt="WeChat QR Code"
                          class="qr-code-image"
                          onload="this.classList.add('loaded')"
