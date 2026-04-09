@@ -9,7 +9,6 @@ const papersData = [
         venue: "Optics & Laser Technology",
         venueUrl: "https://www.sciencedirect.com/journal/optics-and-laser-technology",
         journalInfo: "(SCI, Q1, IF:5.0)",
-        esiHighlyCited: true,
         year: 2026,
         type: "journal",
         doi: null,
