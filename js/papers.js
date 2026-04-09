@@ -15,7 +15,7 @@ const papersData = [
         doi: null,
         pdf: "https://www.sciencedirect.com/science/article/pii/S0030399225021243",
         code: null,
-        keywords: ["Hyperspectral image classification"; "Mamba"; "Dual branch architecture"; "Spectral-guided"],
+        keywords: ["Hyperspectral image classification", "Mamba", "Dual branch architecture", "Spectral-guided"],
         // Model image fields
         hasModelImage: true,
         modelImage: "images/models/Spectral-guided multiscale double helix mamba.jpg",
@@ -37,7 +37,7 @@ const papersData = [
         doi: null,
         pdf: "https://www.sciencedirect.com/science/article/pii/S0030399225014604",
         code: null,
-        keywords: ["Hyperspectral image"; "Change detection"; "Visionmamba"; "Spectral attention guide"],
+        keywords: ["Hyperspectral image", "Change detection", "Visionmamba", "Spectral attention guide"],
         // Model image fields
         hasModelImage: true,
         modelImage: "images/models/Spectral attention and visionmamba difference guided network.jpg",
@@ -81,7 +81,7 @@ const papersData = [
         doi: null,
         pdf: "https://www.sciencedirect.com/science/article/pii/S0957417425031641",
         code: null,
-        keywords: ["Convolutional neural networks"; "Transformers"; "Hyperspectral images"; "Light detection and ranging data"; "Multimodal data classification"],
+        keywords: ["Convolutional neural networks", "Transformers", "Hyperspectral images", "Light detection and ranging data", "Multimodal data classification"],
         // Model image fields
         hasModelImage: true,
         modelImage: "images/models/Complementary information-guided interactive fusion network.jpg",
