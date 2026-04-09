@@ -225,7 +225,7 @@ const papersData = [
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10639462',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10639462",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Change detection (CD)", "hybrid head transformer (HybridHT)", "hyperspectral (HS) image", "transformer"],
         // Model image fields
@@ -246,7 +246,7 @@ const papersData = [
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10637455',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10637455",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Attention mechanism", "feature fusion", "multimodal", "small target detection", "unmanned aerial vehicle (UAV) aerial imagery"],
         // Model image fields
@@ -267,7 +267,7 @@ const papersData = [
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://www.tandfonline.com/doi/full/10.1080/01431161.2024.2370500',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://www.tandfonline.com/doi/full/10.1080/01431161.2024.2370500",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Generative Adversarial Network (GAN)", "Autoencoder (AE)", "transformer", "Hyperspectral image (HSI)", "target detection"],
         // Model image fields
@@ -288,7 +288,7 @@ const papersData = [
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://https://www.joconline.com.cn/zh/article/doi/10.11959/j.issn.1000-436x.2021024/',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://https://www.joconline.com.cn/zh/article/doi/10.11959/j.issn.1000-436x.2021024/",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["卷积神经网络", "高光谱图像分类", "特征拼接", "多尺度滤波器", "空洞卷积"],
         // Model image fields
@@ -309,7 +309,7 @@ const papersData = [
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10506566',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10506566",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Attention mechanism", "deep learning (DL)", "graph neural network (GNN)", "hyperspectral target detection (HTD)", "sparse subspace clustering (SSC)"],
         // Model image fields
@@ -330,7 +330,7 @@ const papersData = [
         year: 2024,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10504929',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10504929",  // 如果有 PDF 链接，请在此更新
         code: "https://github.com/shengrunhua/MRCAGCFN",  // 如果有代码仓库，请在此更新
         keywords: ["Feature extraction", "Convolution", "Shape", "Kernel", "Hyperspectral imaging", "Data mining", "Convolutional neural networks"],
         // Model image fields
@@ -372,7 +372,7 @@ const papersData = [
         year: 2023,
         type: "journal",
         doi: null,
-        pdf: 'https://www.tandfonline.com/doi/abs/10.1080/01431161.2023.2258563',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://www.tandfonline.com/doi/abs/10.1080/01431161.2023.2258563",  // 如果有 PDF 链接，请在此更新
         code: "https://github.com/zhonghaochen/TDGN_Master",  // 如果有代码仓库，请在此更新
         keywords: ["Hyperspectral (HS) image", "change detection (CD)", "convolutional neural networks (CNNs)",  "convolutional gated recurrent unit", "temporal difference-guided"],
         // Model image fields
@@ -393,7 +393,7 @@ const papersData = [
         year: 2023,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10189830',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10189830",  // 如果有 PDF 链接，请在此更新
         code: "https://github.com/zhonghaochen/GNet_Master",  // 如果有代码仓库，请在此更新
         keywords: ["Anisotropic", "feature fusion", "hyperspectral (HS) images", "semantic gap", "spectral-spatial feature"],
         // Model image fields
@@ -414,7 +414,7 @@ const papersData = [
         year: 2023,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10161584/',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10161584/",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Data augmentation (DA)", "deep learning (DL)", "hyperspectral imagery (HSI)", "hyperspectral target detection (HTD)"],
         // Model image fields
@@ -435,7 +435,7 @@ const papersData = [
         year: 2023,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10073570/',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10073570/",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Band selection (BS)", "data augmentation (DA)", "deep learning (DL)", "hyperspectral imagery (HSI)", "hyperspectral target detection (HTD)"],
         // Model image fields
@@ -456,7 +456,7 @@ const papersData = [
         year: 2023,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/10050134',  // 如果有 PDF 链接，请在此更新
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10050134",  // 如果有 PDF 链接，请在此更新
         code: null,  // 如果有代码仓库，请在此更新
         keywords: ["Adaptively dictionary construction (ADC)", "hyperspectral imagery", "target detection"],
         // Model image fields
@@ -478,7 +478,7 @@ const papersData = [
         year: 2022,
         type: "journal",
         doi: null,
-        pdf: 'https://ieeexplore.ieee.org/abstract/document/9968036',
+        pdf: "https://ieeexplore.ieee.org/abstract/document/9968036",
         code: 'https://github.com/zhonghaochen/G2LHTD_Master',
         keywords: ["Target detection", "Hierarchical detection", "Global to local", "Hyperspectral image", "Detection algorithm", "Remote sensing"],
         // Model image fields
