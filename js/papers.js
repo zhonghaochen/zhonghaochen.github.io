@@ -767,7 +767,7 @@ function extractImpactFactor(journalInfo) {
 }
 
 // ===== Helper function to check if Yiyan Zhang is first author =====
-function isYiyanZhangFirstAuthor(authors) {
+function isZhonghaoChenFirstAuthor(authors) {
     // Check if the authors string starts with "Zhonghao Chen"
     return authors.trim().startsWith('Zhonghao Chen');
 }
