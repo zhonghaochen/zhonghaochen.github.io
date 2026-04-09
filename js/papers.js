@@ -510,9 +510,8 @@ const papersData = [
     	modelImageAlt: "CAVFN",
     	citations: 5,
     	googleScholarId: "citation_id_here"
-  }
-
-{
+  },
+	{
 	id: 25,
     	title: "Classification of hyperspectral image based on dual-branch feature interaction network",
     	authors: "Chenming Li, Xiangyi Wang, Zhonghao Chen, Hongmin Gao, Shufang Xu",
@@ -532,9 +531,8 @@ const papersData = [
     	modelImageAlt: "DBFI",
     	citations: 3,
     	googleScholarId: "citation_id_here"
-  }
-
-{
+  },
+	{
 	id: 26,
     	title: "Adaptive spectral-spatial feature fusion network for hyperspectral image classification using limited training samples",
     	authors: "Hongmin Gao, Zhonghao Chen, Feng Xu",
@@ -554,9 +552,9 @@ const papersData = [
     	modelImageAlt: "AS2F2N",
     	citations: 47,
     	googleScholarId: "citation_id_here"
-  }
+  }，
 
-{
+	{
 	id: 27,
     	title: "Directionally separable dilated CNN with hierarchical attention feature fusion for hyperspectral image classification",
     	authors: "Chenming Li, Tingting Fan, Zhonghao Chen, Hongmin Gao",
@@ -576,9 +574,9 @@ const papersData = [
     	modelImageAlt: "DSD-HAFF",
     	citations: 5,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 28,
     	title: "Multiscale spectral‐spatial cross‐extraction network for hyperspectral image classification",
     	authors: "Hongmin Gao, Hongyi Wu, Zhonghao Chen, Yunfei Zhang, Yiyan Zhang, Chenming Li",
@@ -598,9 +596,9 @@ const papersData = [
     	modelImageAlt: "MSSCEN",
     	citations: 6,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 29,
     	title: "Shallow network based on depthwise overparameterized convolution for hyperspectral image classification",
     	authors: "Hongmin Gao, Zhonghao Chen, Chenming Li",
@@ -620,9 +618,9 @@ const papersData = [
     	modelImageAlt: "DOCNN-DRC",
     	citations: 11,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 30,
     	title: "A 3D-2D multibranch feature fusion and dense attention network for hyperspectral image classification",
     	authors: "Hongmin Gao, Yiyan Zhang, Yunfei Zhang, Zhonghao Chen, Chenming Li, Hui Zhou",
@@ -642,9 +640,9 @@ const papersData = [
     	modelImageAlt: "MFFDAN",
     	citations: 5,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 31,
     	title: "A multiscale dual-branch feature fusion and attention network for hyperspectral images classification",
     	authors: "Hongmin Gao, Yiyan Zhang, Zhonghao Chen, Chenming Li",
@@ -664,9 +662,9 @@ const papersData = [
     	modelImageAlt: "MSDBFA",
     	citations: 53,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 32,
     	title: "Dynamic data augmentation method for hyperspectral image classification based on siamese structure",
     	authors: "Hongmin Gao, Junpeng Zhang, Xueying Cao, Zhonghao Chen, Yiyan Zhang, Chenming Li",
@@ -686,9 +684,9 @@ const papersData = [
     	modelImageAlt: "SSADA",
     	citations: 18,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 33,
     	title: "Hierarchical shrinkage multiscale network for hyperspectral image classification with hierarchical feature fusion",
     	authors: "Hongmin Gao, Zhonghao Chen, Chenming Li",
@@ -709,9 +707,9 @@ const papersData = [
     	modelImageAlt: "HSMSN-HFF",
     	citations: 22,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 34,
     	title: "Hybrid dilated convolution with multi-scale residual fusion network for hyperspectral image classification",
     	authors: "Chenming Li, Zelin Qiu, Xueying Cao, Zhonghao Chen, Hongmin Gao, Zaijun Hua",
@@ -731,9 +729,9 @@ const papersData = [
     	modelImageAlt: "LDFN",
     	citations: 34,
     	googleScholarId: "citation_id_here"
-  }
+  },
 
-{
+	{
 	id: 35,
     	title: "Sandwich convolutional neural network for hyperspectral image classification using spectral feature enhancement",
     	authors: "Hongmin Gao, Zhonghao Chen, Chenming Li",
