@@ -560,13 +560,13 @@ function initGallery() {
         return;
     }
 
-      const galleryImages = [
-        'five.jpg',
-        'six.jpg',
-        'seven.jpg',
+      const galleryImages = [     
         'eight.jpg',
-        'nine.jpg',
-        'ten.jpg'
+        'G5.jpg',
+        'G4.jpg',
+        'G3.jpg',
+        'G2.jpg',
+        'G1.jpg',
         // Add more image filenames here as you upload them
     ];
 
