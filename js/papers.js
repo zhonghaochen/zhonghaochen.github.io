@@ -607,7 +607,7 @@ const papersData = [
     	journalInfo: "(SCI, Q1, IF:4.4)",
     	year: 2021,
     	type: "journal",
-    	doi: 10.1109/LGRS.2021.3133598,
+    	doi: null,
     	pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9641854",
     	code: null,
     	keywords: [ "Convolutional neural network (CNN)", "dense residual connection (DRC)", "depthwise overparameterized convolution (DO-Conv)", "hyperspectral image classification (HSIC)"],
