@@ -755,7 +755,7 @@ function showWeChatQR() {
         <div class="wechat-modal-body">
             <div class="qr-code-wrapper">
                 <div class="qr-code-container">
-                    <img src="images/wechat-qr.png"
+                    <img src="images/CZH-WeChat.jpg"
                          alt="WeChat QR Code"
                          class="qr-code-image"
                          onload="this.classList.add('loaded')"
@@ -778,7 +778,7 @@ function showWeChatQR() {
                         ${t.contact.weChatID}
                     </h4>
                     <div class="wechat-id-container">
-                        <code class="wechat-id">YIYAN_WeChat</code>
+                        <code class="wechat-id">CZH_HSI</code>
                         <button class="copy-btn" onclick="copyWeChatID()" title="${t.contact.copyID}">
                             <i class="fas fa-copy"></i>
                         </button>
