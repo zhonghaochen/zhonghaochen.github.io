@@ -13,10 +13,10 @@ const translations = {
         },
         // Hero Section
         hero: {
-            welcome: "Welcome to Yiyan Zhang's Academic Homepage",
-            title: "PhD Student | School of Information Science and Engineering",
+            welcome: "Welcome to Zhonghao Chen's Academic Homepage",
+            title: "PhD Candidate | School of Information Science and Engineering",
             university: "Hohai University",
-            intro1: "I am a PhD student at the",
+            intro1: "I am a PhD Candidate at the",
             intro2: ", supervised by",
             intro3: "and",
             intro4: "My research focuses on developing advanced artificial intelligence methods for remote sensing image interpretation, integrating deep learning techniques with remote sensing data analysis to develop intelligent systems for automated image interpretation.",
@@ -95,7 +95,7 @@ const translations = {
         },
         // Footer
         footer: {
-            welcome: "Welcome to Yiyan Zhang's Homepage"
+            welcome: "Welcome to Zhonghao Chen's Homepage"
         },
         // Back to Top
         backToTop: "Back to Top"
