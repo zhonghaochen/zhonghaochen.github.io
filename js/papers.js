@@ -491,47 +491,269 @@ const papersData = [
         googleScholarId: "citation_id_here"
     },
     {
-        id: 10,
-        title: "Dual-feature attention-based contrastive prototypical clustering for multimodal remote sensing data",
-        authors: "Shufang Xu, Xinchen Ding, Yiyan Zhang, Zhen Zhang, Hongmin Gao, Bing Zhang",
-        venue: "IEEE Transactions on Geoscience and Remote Sensing",
-        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
-        journalInfo: "(SCI, Q1, IF:8.6)",
-        year: 2024,
-        type: "journal",
-        doi: null,
-        pdf: 'https://ieeexplore.ieee.org/document/10745565/',  // 如果有 PDF 链接，请在此更新
-        code: 'https://github.com/RogsDing/DFCPC',  // 如果有代码仓库，请在此更新
-        keywords: ["Contrastive learning", "Prototypical clustering", "Dual-feature attention", "Multimodal remote sensing", "Unsupervised learning"],
-        // Model image fields
-        hasModelImage: true,
-        modelImage: 'images/models/dfcpc.png',
-        modelImageAlt: 'dfcpc network architecture',
-        // Citation data
-        citations: 4,  // 请从 Google Scholar 获取实际引用次数
-        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
-    },
-    {
-        id: 11,
-        title: "Strengthened residual graph and multiscale gated guided convolutional fusion network for hyperspectral change detection",
-        authors: "Shufang Xu, Xiangfei Xia, Haiwei Li, Yiyan Zhang, Runhua Sheng, Hongmin Gao, Bing Zhang",
-        venue: "IEEE Transactions on Geoscience and Remote Sensing",
-        venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
-        journalInfo: "(SCI, Q1, IF:8.6)",
-        year: 2024,
-        type: "journal",
-        doi: null,
-        pdf: 'https://ieeexplore.ieee.org/document/10770276',  // 如果有 PDF 链接，请在此更新
-        code: 'https://github.com/zhangyiyan001/srgmgn',  // 如果有代码仓库，请在此更新
-        keywords: ["Change detection", "Residual graph", "Multiscale feature fusion", "Gated convolution", "Hyperspectral image"],
-        // Model image fields
-        hasModelImage: true,
-        modelImage: 'images/models/srgmgn.png',
-        modelImageAlt: 'srgmgn network architecture',
-        // Citation data
-        citations: 4,  // 请从 Google Scholar 获取实际引用次数
-        googleScholarId: "citation_id_here"  // 请更新为实际的 Google Scholar ID
-    }
+	id: 24,
+    	title: "Fusion network for local and global features extraction for hyperspectral image classification",
+    	authors: "Hongmin Gao, Hongyi Wu, Zhonghao Chen, Yiyan Zhang, Shufang Xu",
+    	venue: "International Journal of Remote Sensing",
+    	venueUrl: "https://www.tandfonline.com/journals/tres20",
+    	journalInfo: "(SCI, Q2, IF:2.6)",
+    	year: 2022,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://www.tandfonline.com/doi/epdf/10.1080/01431161.2022.2102952?needAccess=true",
+    	code: null,
+    	keywords: ["Hyperspectral imageclassification (HSI)", "visiontransformer (ViT)", "convolutional neuralnetworks (CNN)", "sequencedata; feature fusion"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/CAVFN.png",
+	// Citation data
+    	modelImageAlt: "CAVFN",
+    	citations: 5,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 25,
+    	title: "Classification of hyperspectral image based on dual-branch feature interaction network",
+    	authors: "Chenming Li, Xiangyi Wang, Zhonghao Chen, Hongmin Gao, Shufang Xu",
+    	venue: "International Journal of Remote Sensing",
+    	venueUrl: "https://www.tandfonline.com/journals/tres20",
+    	journalInfo: "(SCI, Q2, IF:2.6)",
+    	year: 2022,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://www.tandfonline.com/doi/epdf/10.1080/01431161.2022.2089069?needAccess=true",
+    	code: null,
+    	keywords: ["Hyperspectral imageclassification", "convolutional neural network", "Vision Transformer", "dual-branchfeature interaction"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/DBFI.png",
+	// Citation data
+    	modelImageAlt: "DBFI",
+    	citations: 3,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 26,
+    	title: "Adaptive spectral-spatial feature fusion network for hyperspectral image classification using limited training samples",
+    	authors: "Hongmin Gao, Zhonghao Chen, Feng Xu",
+    	venue: "International Journal of Applied Earth Observation and Geoinformation",
+    	venueUrl: "https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation",
+    	journalInfo: "(SCI, Q1, IF:8.6)",
+    	year: 2022,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://www.sciencedirect.com/science/article/pii/S0303243422000137/pdfft?md5=304c5c117b0794c5384e2564758e2e58&pid=1-s2.0-S0303243422000137-main.pdf",
+    	code: "https://github.com/zhonghaochen/ELSEVIER_IJAEOG_AS2F2N",
+    	keywords: ["Convolutional neural network (CNN) ", "Hyperspectral image (HSI) classification", "Spectral band non-localization (SBNL)", "Multiscale-share inception block (MSIB)", "Adaptive feature fusion (AFF)"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/AS2F2N.png",
+	// Citation data
+    	modelImageAlt: "AS2F2N",
+    	citations: 47,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 27,
+    	title: "Directionally separable dilated CNN with hierarchical attention feature fusion for hyperspectral image classification",
+    	authors: "Chenming Li, Tingting Fan, Zhonghao Chen, Hongmin Gao",
+    	venue: "International Journal of Remote Sensing",
+    	venueUrl: "https://www.tandfonline.com/journals/tres20",
+    	journalInfo: "(SCI, Q2, IF:3.0)",
+    	year: 2022,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://www.tandfonline.com/doi/epdf/10.1080/01431161.2021.2019849?needAccess=true",
+    	code: null,
+    	keywords: ["hyperspectral image classification", "dilated convolution", "hierarchical feature fusion"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/DSD-HAFF.png",
+	// Citation data
+    	modelImageAlt: "DSD-HAFF",
+    	citations: 5,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 28,
+    	title: "Multiscale spectral‐spatial cross‐extraction network for hyperspectral image classification",
+    	authors: "Hongmin Gao, Hongyi Wu, Zhonghao Chen, Yunfei Zhang, Yiyan Zhang, Chenming Li",
+    	venue: "IET Image Processing",
+    	venueUrl: "https://ietresearch.onlinelibrary.wiley.com/journal/17519667",
+    	journalInfo: "(SCI, Q3, IF:2.2)",
+    	year: 2022,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/ipr2.12382",
+    	code: null,
+    	keywords: [ ],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/MSSCEN.png",
+	// Citation data
+    	modelImageAlt: "MSSCEN",
+    	citations: 6,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 29,
+    	title: "Shallow network based on depthwise overparameterized convolution for hyperspectral image classification",
+    	authors: "Hongmin Gao, Zhonghao Chen, Chenming Li",
+    	venue: "IEEE Geoscience and Remote Sensing Letters",
+    	venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859",
+    	journalInfo: "(SCI, Q1, IF:4.4)",
+    	year: 2021,
+    	type: "journal",
+    	doi: 10.1109/LGRS.2021.3133598,
+    	pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9641854",
+    	code: null,
+    	keywords: [ "Convolutional neural network (CNN)", "dense residual connection (DRC)", "depthwise overparameterized convolution (DO-Conv)", "hyperspectral image classification (HSIC)"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/DOCNN-DRC.png",
+	// Citation data
+    	modelImageAlt: "DOCNN-DRC",
+    	citations: 11,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 30,
+    	title: "A 3D-2D multibranch feature fusion and dense attention network for hyperspectral image classification",
+    	authors: "Hongmin Gao, Yiyan Zhang, Yunfei Zhang, Zhonghao Chen, Chenming Li, Hui Zhou",
+    	venue: "Micromachines",
+    	venueUrl: "https://www.mdpi.com/journal/micromachines",
+    	journalInfo: "(SCI, Q2, IF:3.0)",
+    	year: 2021,
+    	type: "journal",
+    	doi: https://doi.org/10.3390/mi12101271,
+    	pdf: "https://mdpi-res.com/d_attachment/micromachines/micromachines-12-01271/article_deploy/micromachines-12-01271-v2.pdf?version=1634629450",
+    	code: null,
+    	keywords: [ "convolutional neural network", "hyperspectral image classifications", "multibranch feature fusion", "dense attention block"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/MFFDAN.png",
+	// Citation data
+    	modelImageAlt: "MFFDAN",
+    	citations: 5,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 31,
+    	title: "A multiscale dual-branch feature fusion and attention network for hyperspectral images classification",
+    	authors: "Hongmin Gao, Yiyan Zhang, Zhonghao Chen, Chenming Li",
+    	venue: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    	venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443",
+    	journalInfo: "(SCI, Q1, IF:5.3)",
+    	year: 2021,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9512469",
+    	code: null,
+    	keywords: [ "Convolutional neural network (CNN)", "dual branch feature fusion (DBFM)", "hyperspectral (HSI) classification", "multiscale feature extraction(MSFE) module", "shuffle attention block"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/MSDBFA.png",
+	// Citation data
+    	modelImageAlt: "MSDBFA",
+    	citations: 53,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 32,
+    	title: "Dynamic data augmentation method for hyperspectral image classification based on siamese structure",
+    	authors: "Hongmin Gao, Junpeng Zhang, Xueying Cao, Zhonghao Chen, Yiyan Zhang, Chenming Li",
+    	venue: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    	venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443",
+    	journalInfo: "(SCI, Q1, IF:5.3)",
+    	year: 2021,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9508179",
+    	code: null,
+    	keywords: [ "Convolutional neural network (CNN)", "data augmentation (DA)", "hyperspectral (HSI) classification", "Siamese structure"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/SSADA.png",
+	// Citation data
+    	modelImageAlt: "SSADA",
+    	citations: 18,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 33,
+    	title: "Hierarchical shrinkage multiscale network for hyperspectral image classification with hierarchical feature fusion",
+    	authors: "Hongmin Gao, Zhonghao Chen, Chenming Li",
+    	venue: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    	venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443",
+    	journalInfo: "(SCI, Q1, IF:5.3)",
+    	year: 2021,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9440750",
+    	code: null,
+    	keywords: [ "Convolutional neural network (CNN)", "hierarchical feature fusion (HFF)", "hierarchical shrinkage multiscale network (HSMSN)", "hyperspectral image classification
+(HSIC)", "multidepth and multiscale residual block (MDMSRB)"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/HSMSN-HFF.png",
+	// Citation data
+    	modelImageAlt: "HSMSN-HFF",
+    	citations: 22,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 34,
+    	title: "Hybrid dilated convolution with multi-scale residual fusion network for hyperspectral image classification",
+    	authors: "Chenming Li, Zelin Qiu, Xueying Cao, Zhonghao Chen, Hongmin Gao, Zaijun Hua",
+    	venue: "Micromachines",
+    	venueUrl: "https://www.mdpi.com/journal/micromachines",
+    	journalInfo: "(SCI, Q2, IF:3.0)",
+    	year: 2021,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://www.mdpi.com/2072-666X/12/5/545/pdf?version=1620898882",
+    	code: null,
+    	keywords: [ "HSI classification", "local and hybrid dilated convolution", "residual fusion networks"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/LDFN.png",
+	// Citation data
+    	modelImageAlt: "LDFN",
+    	citations: 34,
+    	googleScholarId: "citation_id_here"
+  }
+
+{
+	id: 35,
+    	title: "Sandwich convolutional neural network for hyperspectral image classification using spectral feature enhancement",
+    	authors: "Hongmin Gao, Zhonghao Chen, Chenming Li",
+    	venue: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    	venueUrl: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443",
+    	journalInfo: "(SCI, Q1, IF:5.3)",
+    	year: 2021,
+    	type: "journal",
+    	doi: null,
+    	pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9366971",
+    	code: null,
+    	keywords: [ "Convolutional neural network", "hyperspectral image (HSI) classification", "lightweight sandwich convolution neural network", "spectral feature enhancement", "spectral feature re-extraction"],
+	// Model image fields
+    	hasModelImage: true,
+    	modelImage: "images/models/SFE-SCNN.png",
+	// Citation data
+    	modelImageAlt: "SFE-SCNN",
+    	citations: 39,
+    	googleScholarId: "citation_id_here"
+  }
     
 ];
 
