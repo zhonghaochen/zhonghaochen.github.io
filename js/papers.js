@@ -552,7 +552,7 @@ const papersData = [
     	modelImageAlt: "AS2F2N",
     	citations: 47,
     	googleScholarId: "citation_id_here"
-  }，
+  },
 
 	{
 	id: 27,
@@ -629,7 +629,7 @@ const papersData = [
     	journalInfo: "(SCI, Q2, IF:3.0)",
     	year: 2021,
     	type: "journal",
-    	doi: https://doi.org/10.3390/mi12101271,
+    	doi: null,
     	pdf: "https://mdpi-res.com/d_attachment/micromachines/micromachines-12-01271/article_deploy/micromachines-12-01271-v2.pdf?version=1634629450",
     	code: null,
     	keywords: [ "convolutional neural network", "hyperspectral image classifications", "multibranch feature fusion", "dense attention block"],
