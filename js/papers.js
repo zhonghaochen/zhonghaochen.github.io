@@ -191,7 +191,7 @@ const papersData = [
         modelImage: "images/models/MDA-HTD.jpg",
         modelImageAlt: "MDA-HTD",
         // Citation data
-        citations: 0,
+        citations: 26,
         googleScholarId: "citation_id_here"
     },
     {
