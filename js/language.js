@@ -42,7 +42,7 @@ const translations = {
                 gis: "Geographic Information Systems"
             },
             technicalExpertise: "Technical Expertise",
-            technicalText: "Deep Learning, CNNs, Transformer architectures, Selective State Space Model, Classification, Target detection, Change Detection, Multi-scale Feature Fusion"
+            technicalText: "Deep Learning, CNNs, Transformer architectures, Selective State Space Model, Classification, Target Detection, Change Detection, Multi-scale Feature Fusion"
         },
         // Publications Section
         publications: {
